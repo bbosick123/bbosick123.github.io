@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>비 내리는 효과</title>
+		<style>
+			body {
+				background-color: #6495ed; /* 배경색을 파란색으로 설정 */
+				overflow: hidden; /* 화면 넘침 제거 */
+			}
+
+			.raindrop {
+				position: absolute;
+				background-color: #00f; /* 비색을 파란색으로 설정 */
+				opacity: 0.5; /* 빗방울 투명도 설정 */
+				width: 2px;
+				height: 100px;
+				animation: fall 1s linear infinite; /* 빗방울 애니메이션 적용 */
+			}
+
+			@keyframes fall {
+				0% {
+					transform: translateY(0px) translateX(0px);
+				}
+				100% {
+					transform: translateY(100vh) translateX(10px); /* 화면 아래까지 떨어지는 위치 설정 */
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			// 비 내리는 빗물 드롭 생성 및 화면에 추가
+			function createRaindrop() {
+				const raindrop = document.createElement("div");
+				raindrop.className = "raindrop";
+				raindrop.style.left = Math.random() * window.innerWidth + "px";
+				document.body.appendChild(raindrop);
+
+				// 빗물 드롭이 화면 아래로 벗어나면 제거
+				raindrop.addEventListener("animationiteration", () => {
+					raindrop.remove();
+				});
+			}
+
+			// 일정 간격으로 비 내리는 빗물 드롭 생성
+			setInterval(createRaindrop, 100);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Swiper Slider</title>
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<style>
+			.swiper-slide {
+				flex: 0 0 calc(50% - 100px); /* 각 슬라이드의 너비를 50%로 설정 */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 24px;
+				color: white;
+				background-color: black;
+			}
+
+			.swiper-slide:nth-child(2) {
+				background-color: #3498db; /* 홀수 번째 슬라이드 배경색: 파랑 */
+			}
+
+			.swiper-slide:nth-child(3) {
+				background-color: #e74c3c; /* 짝수 번째 슬라이드 배경색: 빨강 */
+			}
+			.swiper-slide:nth-child(4) {
+				background-color: green; /* 짝수 번째 슬라이드 배경색: 빨강 */
+			}
+			.test {
+				width: 1200px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+					<!-- 여러 개의 슬라이드를 추가할 수 있습니다. -->
+				</div>
+				<!-- 페이지네이션 등의 추가적인 요소를 원한다면 여기에 추가하세요. -->
+			</div>
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<script>
+			var swiper = new Swiper(".swiper-container", {
+				slidesPerView: "auto", // 자동으로 슬라이드 너비 설정
+				spaceBetween: 50, // 슬라이드 간의 간격 설정
+				centeredSlides: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+		</script>
+	</body>
+</html>

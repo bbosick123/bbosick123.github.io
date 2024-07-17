@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Click to Add Active Class</title>
+		<style>
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			li {
+				opacity: 0;
+				transition: opacity 1s ease, transform 1s ease;
+			}
+
+			.active {
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>#무한_긍정러</li>
+			<li>#융통성_만렙</li>
+			<li>#성실한_도비</li>
+			<li>#부처와_같은_이너피스</li>
+			<li>#믿고_쓰는_마무리_투수</li>
+		</ul>
+
+		<script>
+			const listItems = document.querySelectorAll("li");
+
+			function addActiveClassSequentially(index) {
+				if (index < listItems.length) {
+					listItems[index].classList.add("active");
+					setTimeout(() => {
+						addActiveClassSequentially(index + 1);
+					}, 1000);
+				}
+			}
+
+			// 페이지 로드 후 1초 간격으로 active 클래스 추가 시작
+			setTimeout(() => {
+				addActiveClassSequentially(0);
+			}, 1000);
+		</script>
+	</body>
+</html>

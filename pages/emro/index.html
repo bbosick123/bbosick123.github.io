@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	</head>
+	<body>
+		<div class="main">
+			<header class="main-header" id="mainHeader">
+				<div class="inner">
+					<a href="" class="main-header__logo">
+						<img class="main-header__logo--black" src="./assets/images/logo_black.png" alt="로고" />
+						<img class="main-header__logo--white" src="./assets/images/logo.png" alt="로고" />
+					</a>
+					<div class="main-header__gnb-button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="main-header__gnb-dim"></div>
+					<ul class="main-header__gnb">
+						<li>서비스 소개</li>
+						<li>Our Offering</li>
+						<li>적용사례</li>
+						<li>도입문의</li>
+						<li>고객센터</li>
+					</ul>
+					<ul class="main-header__login">
+						<li>LOGIN</li>
+					</ul>
+				</div>
+			</header>
+			<div class="main-visual bg01" id="mainVisual">
+				<div class="inner">
+					<div class="main-visual__text" data-aos="fade-right">AI & Cloud</div>
+					<div class="main-visual__text-sub" data-aos="fade-right" data-aos-delay="200">기반의 디지털 구매혁신 솔루션</div>
+					<div class="main-visual__text-more">
+						<p data-aos="fade-right" data-aos-delay="400">emroCloud</p>
+						<button class="button" data-aos="fade-right" data-aos-delay="600">VIEW MORE<i class="ico ico-more"></i></button>
+					</div>
+					<div class="main-section__nav" data-aos="fade-right" data-aos-delay="800">
+						<ol class="main-section__nav-pagination" id="VisualPagination">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+						</ol>
+						<ul id="VisualList">
+							<li class="main-section__nav-item" data-aos="fade-right" data-aos-delay="800">
+								<div class="main-section__nav-item--bg"></div>
+								<a href="#section01">
+									<div class="main-section__nav-title">AI 기반 데이터 관리</div>
+									<p>AI 기반 품목정보<br />관리 자동화</p>
+								</a>
+							</li>
+							<li class="main-section__nav-item" data-aos="fade-up" data-aos-delay="1000">
+								<div class="main-section__nav-item--bg"></div>
+								<a href="#section02">
+									<div class="main-section__nav-title">Spend Analysis</div>
+									<p>
+										다양한 관점의<br />
+										Spend Analysis
+									</p>
+								</a>
+							</li>
+							<li class="main-section__nav-item" data-aos="fade-up" data-aos-delay="1200">
+								<div class="main-section__nav-item--bg"></div>
+								<a href="#section03">
+									<div class="main-section__nav-title">Operation Excellence</div>
+									<p>Best Practice<br />구매 프로세스</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main-section">
+				<div class="inner">
+					<div class="main-section__head">
+						<div class="main-section__head-text-sub" data-aos="zoom-in">AI 기반 데이터 관리</div>
+						<div class="main-section__head-text" data-aos="zoom-in" data-aos-delay="300">
+							<span><strong>AI</strong>기술</span>을 활용하여<br />
+							품목정보를 정확하게 관리하고
+						</div>
+					</div>
+					<div class="main-section__item-list">
+						<div class="main-section__item" data-aos="fade-up" data-aos-delay="400">
+							<img src="./assets/images/img_main_section01_01.png" alt="상시 데이터 품질 관리" />
+							<p>상시 데이터 품질 관리</p>
+							<span>유사 품목 자동 식별 & 모니터링 및 알림</span>
+						</div>
+						<div class="main-section__item" data-aos="fade-up" data-aos-delay="500">
+							<img src="./assets/images/img_main_section01_02.png" alt="품목분류 자동화" />
+							<p>품목분류 자동화</p>
+							<span>Item별 품목분류 체계 자동 매핑</span>
+						</div>
+						<div class="main-section__item" data-aos="fade-up" data-aos-delay="600">
+							<img src="./assets/images/img_main_section01_03.png" alt="Item Master 정비" />
+							<p>Item Master 정비</p>
+							<span>품목정보 표준화 및 클린징 자동화</span>
+						</div>
+					</div>
+					<div class="main-section__foot pt70" data-aos="fade-up" data-aos-delay="700" data-aos-offset="-50">
+						<button class="button">VIEW MORE<i class="ico ico-more"></i></button>
+					</div>
+				</div>
+			</div>
+			<div id="section01" class="main-section main-section--gray">
+				<div class="inner">
+					<div class="main-section__head">
+						<div class="main-section__head-text-sub" data-aos="zoom-in">Spend Analysis</div>
+						<div class="main-section__head-text" data-aos="zoom-in" data-aos-delay="300">
+							<span>전사 비용 분석</span>을 통해<br />
+							전략적 구매 의사결정을 지원하고
+						</div>
+					</div>
+					<div class="main-section__item-list main-section__item-list--type02">
+						<div class="main-section__item" data-aos="fade-up" data-aos-delay="500">
+							<img src="./assets/images/img_main_section02_01.jpg" alt="비용 관점 분석" />
+							<p>비용 관점 분석</p>
+							<span>누가, 얼마나, 어디에 사용하고 있는가?</span>
+						</div>
+						<div class="main-section__item" data-aos="fade-up" data-aos-delay="600">
+							<img src="./assets/images/img_main_section02_02.jpg" alt="공급사 관점 분석" />
+							<p>공급사 관점 분석</p>
+							<span>적합한 공급사와 효율적으로 거래하고 있는가?</span>
+						</div>
+						<div class="main-section__item" data-aos="fade-up" data-aos-delay="700">
+							<img src="./assets/images/img_main_section02_03.jpg" alt="규정준수 관점 분석" />
+							<p>규정준수 관점 분석</p>
+							<span>업무별 프로세스와 규정이 잘 지켜지고 있는가?</span>
+						</div>
+					</div>
+					<div class="main-section__foot" data-aos="fade-up" data-aos-delay="800" data-aos-offset="-50">
+						<button class="button">VIEW MORE<i class="ico ico-more"></i></button>
+					</div>
+				</div>
+			</div>
+
+			<div id="section02" class="main-section main-section--blue">
+				<div class="inner">
+					<div class="main-section__head">
+						<div class="main-section__head-text-sub main-section__head-text-sub--white" data-aos="zoom-in">Operation Excellence</div>
+						<div class="main-section__head-text main-section__head-text--type02" data-aos="zoom-in" data-aos-delay="300">
+							<span><strong class="color--white">Best Practice</strong>기반의</span><br />
+							투명하고 효율적인 구매 프로세스를 제공하여
+						</div>
+					</div>
+					<div class="main-section__item-step" data-aos="zoom-in">
+						<div class="main-section__item-step-title">Standard Process</div>
+						<ol>
+							<li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1050">
+								<img src="./assets/images/img_main_section03_01.png" alt="구매요청" />
+								<p>구매요청</p>
+							</li>
+							<li data-aos="fade-right" data-aos-delay="300" data-aos-duration="1050">
+								<img src="./assets/images/img_main_section03_02.png" alt="소싱" />
+								<p>소싱</p>
+							</li>
+							<li data-aos="fade-right" data-aos-delay="400" data-aos-duration="1050">
+								<img src="./assets/images/img_main_section03_03.png" alt="계약" />
+								<p>계약</p>
+							</li>
+							<li data-aos="fade-right" data-aos-delay="500" data-aos-duration="1050">
+								<img src="./assets/images/img_main_section03_04.png" alt="발주" />
+								<p>발주</p>
+							</li>
+							<li data-aos="fade-right" data-aos-delay="600" data-aos-duration="1050">
+								<img src="./assets/images/img_main_section03_05.png" alt="검수/입고" />
+								<p>검수/입고</p>
+							</li>
+						</ol>
+					</div>
+					<div class="main-section__foot" data-aos="fade-up" data-aos-delay="700" data-aos-offset="-50">
+						<button class="button">VIEW MORE<i class="ico ico-more"></i></button>
+					</div>
+				</div>
+			</div>
+			<div id="section03" class="main-section">
+				<div class="inner">
+					<div class="main-section__head">
+						<div class="main-section__head-text-sub" data-aos="zoom-in">Operation Excellence</div>
+						<div class="main-section__head-text" data-aos="zoom-in" data-aos-delay="300">
+							<span><strong class="color--blue">Right Procurement</strong></span
+							>를<br />
+							실현합니다.
+						</div>
+					</div>
+					<div class="main-section__item-list main-section__item-list--col5" data-aos="zoom-in">
+						<div class="main-section__item-list--bg"></div>
+						<div class="main-section__item" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1050">
+							<img src="./assets/images/img_main_section04_01.png" alt="Right Item" />
+							<p class="font-weight-400">Right <span>Item</span></p>
+						</div>
+						<div class="main-section__item" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1050">
+							<img src="./assets/images/img_main_section04_02.png" alt="Price" />
+							<p class="font-weight-400">Right <span>Price</span></p>
+						</div>
+						<div class="main-section__item" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1050">
+							<img src="./assets/images/img_main_section04_03.png" alt="Supplier" />
+							<p class="font-weight-400">Right <span>Supplier</span></p>
+						</div>
+						<div class="main-section__item" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1050">
+							<img src="./assets/images/img_main_section04_04.png" alt="Process" />
+							<p class="font-weight-400">Right <span>Process</span></p>
+						</div>
+						<div class="main-section__item" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1050">
+							<img src="./assets/images/img_main_section04_05.png" alt="System" />
+							<p class="font-weight-400">Right <span>System</span></p>
+						</div>
+					</div>
+					<div class="main-section__foot" data-aos="fade-up" data-aos-delay="700" data-aos-offset="-50">
+						<button class="button">VIEW MORE<i class="ico ico-more"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="main-section main-section--gray">
+				<div class="inner">
+					<div class="main-section__head mb40">
+						<div class="main-section__head-text-sub" data-aos="zoom-in">Reference</div>
+						<div class="main-section__head-text" data-aos="zoom-in" data-aos-delay="300">
+							<span><strong class="color--blue">emroCloud</strong></span
+							>를 통한<br />
+							구매혁신 사례를 확인해 보세요.
+						</div>
+					</div>
+					<div class="reference-wrap" data-aos="fade-up" data-aos-delay="500">
+						<div class="swiper mySwiper">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<ul>
+										<li>
+											<img src="./assets/images/1704692259328708.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704692259328708.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704692259328708.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704692259328708.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704692259328708.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704692259328708.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704692259328708.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704692259328708.png" alt="" />
+										</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul>
+										<li>
+											<img src="./assets/images/1704689732219013.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704689732219013.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704689732219013.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704689732219013.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704689732219013.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704689732219013.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704689732219013.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1704689732219013.png" alt="" />
+										</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul>
+										<li>
+											<img src="./assets/images/1632629433957936.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629433957936.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629433957936.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629433957936.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629433957936.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629433957936.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629433957936.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629433957936.jpg" alt="" />
+										</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul>
+										<li>
+											<img src="./assets/images/1642738656090282.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1642738656090282.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1642738656090282.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1642738656090282.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1642738656090282.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1642738656090282.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1642738656090282.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1642738656090282.png" alt="" />
+										</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul>
+										<li>
+											<img src="./assets/images/1632629258281666.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629258281666.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629258281666.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629258281666.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629258281666.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629258281666.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629258281666.jpg" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/1632629258281666.jpg" alt="" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-section__foot pt60" data-aos="fade-up" data-aos-delay="700" data-aos-offset="-50">
+						<button class="button">VIEW MORE<i class="ico ico-more"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="main-section main-section--picture">
+				<div class="inner">
+					<div class="main-section__head">
+						<div class="main-section__head-text-sub main-section__head-text-sub--white" data-aos="zoom-in">Contact</div>
+						<div class="main-section__head-text main-section__head-text--type03" data-aos="zoom-in" data-aos-delay="300">
+							<strong>구매시스템 도입을 검토중이신가요?</strong><br />
+							아래 목록에서 하나라도 해당된다면 바로 연락 주세요.
+						</div>
+					</div>
+					<div class="main-section__item-check" data-aos="fade-up" data-aos-delay="400">
+						<ul data-aos="fade-up" data-aos-delay="600">
+							<li>비용통제를 강화하고 싶다.</li>
+							<li>어떤 부서가 어떤 품목을 얼마나 구매하는지 잘 모른다.</li>
+							<li>투명성을 향상시키고 싶다.</li>
+							<li>전화, 이메일, 엑셀, 종이문서 등 수작업이 많다.</li>
+							<li>ERP 도입 또는 교체를 계획 중이다.</li>
+							<li>필요한 데이터를 찾는데 시간이 오래 걸린다.</li>
+							<li>신사업 확장으로 다양한 영역에서 구매가 증가하고 있다.</li>
+							<li>구매 프로세스를 표준화하고 정비하고 싶다.</li>
+						</ul>
+					</div>
+					<div class="main-section__foot">
+						<button class="button" data-aos="fade-up" data-aos-delay="700" data-aos-offset="-50">CONTACT US<i class="ico ico-more"></i></button>
+					</div>
+				</div>
+			</div>
+			<footer class="main-footer">
+				<ul class="main-footer__head">
+					<li>회사소개</li>
+					<li>이용약관</li>
+					<li>개인정보처리방침</li>
+				</ul>
+				<ul>
+					<li>(주)엠로대표 송재민</li>
+					<li>사업자등록번호 220-81-81381</li>
+					<li>대표전화 02-785-9848</li>
+					<li>팩스 02-6121-8610</li>
+				</ul>
+				<address>주소 서울특별시 영등포구 당산로 41길 11, 당산 SKV1 E동 5층</address>
+				<p>© emro All rights reserved.</p>
+				<img src="./assets/images/footer_logo.png" alt="" />
+			</footer>
+		</div>
+		<!-- script import -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="./assets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- script import -->
+
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				autoplay: {
+					delay: 3000,
+				},
+				loop: true,
+				speed: 800,
+			});
+		</script>
+	</body>
+</html>
