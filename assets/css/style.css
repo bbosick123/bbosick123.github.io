@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+*::-moz-selection {
+  background: #0a64bf;
+  color: #fff;
+}
+
 *::selection {
   background: #0a64bf;
   color: #fff;
@@ -1599,27 +1604,22 @@ html {
 }
 @keyframes ball {
   0% {
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform: translate3d(0, 0, 0);
   }
   12% {
-    -webkit-animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
     animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
     transform: translate3d(0, -18px, 0);
   }
   24% {
-    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
     animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
     transform: translate3d(0, 0, 0);
   }
   33% {
-    -webkit-animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
     animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
     transform: translate3d(0, -10px, 0);
   }
   42% {
-    -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
     transform: translate3d(0, 0, 0);
   }
@@ -1650,5 +1650,3 @@ html {
     left: 63.3%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

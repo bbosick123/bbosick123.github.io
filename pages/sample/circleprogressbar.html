@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Circle Progress Bar</title>
+		<style>
+			body {
+				display: flex; /* 컨텐츠를 중앙에 배치 */
+				justify-content: center; /* 수평 중앙 정렬 */
+				align-items: center; /* 수직 중앙 정렬 */
+				height: 100vh; /* 화면 전체 높이 */
+				background-color: #f0f0f0; /* 배경색 설정 */
+				margin: 0; /* 기본 여백 제거 */
+			}
+
+			.progress-container {
+				position: relative; /* 자식 요소의 위치를 기준으로 배치 */
+				width: 200px; /* 컨테이너 너비 */
+				height: 200px; /* 컨테이너 높이 */
+			}
+
+			.progress-circle {
+				transform: rotate(-90deg); /* 원을 시계 반대 방향으로 90도 회전 */
+			}
+
+			.bg {
+				fill: none; /* 내부 색 채우기 없음 */
+				stroke: #e6e6e6; /* 원의 외곽선 색상 */
+				stroke-width: 20; /* 외곽선 두께 */
+			}
+
+			.progress {
+				fill: none; /* 내부 색 채우기 없음 */
+				stroke: #3498db; /* 진행 상태 색상 */
+				stroke-width: 20; /* 진행 상태 외곽선 두께 */
+				/* stroke-linecap: butt; 외곽선 끝을 각지게 설정 */
+				stroke-linecap: round; /* 외곽선 끝을 둥글게 설정 */
+				stroke-dasharray: 565.48; /* 원 둘레 길이: 2 * Math.PI * 90 */
+				stroke-dashoffset: 565.48; /* 처음에 원을 완전히 숨긴 상태로 시작 */
+				transition: stroke-dashoffset 1s ease; /* 애니메이션 효과 설정 */
+			}
+
+			.progress-text {
+				position: absolute; /* 부모 요소를 기준으로 절대 위치 */
+				top: 50%; /* 수직 중앙 정렬 */
+				left: 50%; /* 수평 중앙 정렬 */
+				transform: translate(-50%, -50%); /* 중앙으로 이동 */
+				font-size: 24px; /* 글꼴 크기 */
+				font-weight: bold; /* 글꼴 두께 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="progress-container">
+			<svg class="progress-circle" width="200" height="200" viewBox="0 0 200 200">
+				<!-- 배경 원 -->
+				<circle class="bg" cx="100" cy="100" r="90"></circle>
+				<!-- 진행 상태를 표시하는 원 -->
+				<circle class="progress" cx="100" cy="100" r="90"></circle>
+			</svg>
+			<!-- 진행 상태를 표시하는 텍스트 -->
+			<div class="progress-text">0%</div>
+		</div>
+
+		<script>
+			function setProgress(percent) {
+				const progressCircle = document.querySelector(".progress"); // 진행 상태 원 선택
+				const progressText = document.querySelector(".progress-text"); // 진행 상태 텍스트 선택
+				const radius = progressCircle.r.baseVal.value; // 원의 반지름 값 가져오기
+				const circumference = 2 * Math.PI * radius; // 원의 둘레 계산
+				const offset = circumference - (percent / 100) * circumference; // 진행 상태에 따른 offset 계산
+
+				// 약간의 지연을 두고 애니메이션 적용
+				setTimeout(() => {
+					progressCircle.style.strokeDashoffset = offset; // 계산된 offset으로 진행 상태 설정
+				}, 100); // 애니메이션 효과를 위한 약간의 지연
+
+				let currentProgress = 0; // 현재 진행 상태 초기화
+				const interval = setInterval(() => {
+					if (currentProgress <= percent) {
+						// 목표 퍼센트까지 증가
+						progressText.textContent = `${currentProgress}%`; // 텍스트 업데이트
+						currentProgress++; // 현재 진행 상태 증가
+					} else {
+						clearInterval(interval); // 목표 퍼센트에 도달하면 interval 중지
+					}
+				}, 10); // 텍스트를 매 10ms마다 업데이트
+			}
+
+			// 예제: 진행 상태를 70%로 업데이트
+			setProgress(70);
+		</script>
+	</body>
+</html>
