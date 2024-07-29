@@ -12,6 +12,7 @@ import JavascriptIntro from "@/views/javascript/intro.vue";
 
 import VueIntro from "@/views/vue/intro.vue";
 import VueRefresh from "@/views/vue/Refresh.vue";
+import VueVitePluginPage from "@/views/vue/VitePluginPage.vue";
 
 import HorizontalScroll from "@/views/sample/HorizontalScroll.vue";
 import CircleProgress from "@/views/sample/CircleProgress.vue";
@@ -52,6 +53,11 @@ const router = createRouter({
 					path: "vue/Refresh",
 					component: VueRefresh,
 					meta: { title: "vue - Refresh" },
+				},
+				{
+					path: "vue/VitePluginPage",
+					component: VueVitePluginPage,
+					meta: { title: "vue - vite-plugin-page" },
 				},
 			],
 		},

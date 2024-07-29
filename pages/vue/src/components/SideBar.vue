@@ -7,7 +7,7 @@
 					<ul v-if="item.open" class="sidebar__title-depth2">
 						<li v-for="(subitem, subindex) in item.subitems" :key="subindex">
 							<router-link :to="subitem.link" @click.stop="$emit('close-sidebar')">
-								{{ subitem.label }}
+								<h4>{{ subitem.label }}</h4>
 							</router-link>
 						</li>
 					</ul>
@@ -46,6 +46,7 @@ const items = ref([
 		subitems: [
 			{ label: "소개", link: "/vue/intro" },
 			{ label: "새로고침 이슈", link: "/vue/Refresh" },
+			{ label: "vite-plugin-page", link: "/vue/VitePluginPage" },
 		],
 	},
 	{
@@ -131,7 +132,10 @@ onMounted(() => {
 			a {
 				position: relative;
 				display: flex;
-				word-break: break-all;
+				h4 {
+					word-break: break-all;
+					font-weight: 400;
+				}
 			}
 
 			.router-link-active {
