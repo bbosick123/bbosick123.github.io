@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import DefaultLayout from "@/layouts/defaultLayout.vue";
 import SampleLayout from "@/layouts/sampleLayout.vue";
 
+import NotFound from "@/views/404.vue";
+
 import DefaultView from "@/views/intro.vue";
 import HtmlIntro from "@/views/html/intro.vue";
 
@@ -20,6 +22,11 @@ import CircleProgress from "@/views/sample/CircleProgress.vue";
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
 	routes: [
+		{
+			path: "/:pathMatch(.*)*",
+			name: "NotFound",
+			component: NotFound,
+		},
 		{
 			path: "/",
 			component: DefaultLayout,
