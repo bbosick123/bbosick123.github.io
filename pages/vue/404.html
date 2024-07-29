@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Page not found</title>
+		<script>
+			// GitHub Pages에서 SPA 라우팅 문제를 해결하기 위한 스크립트
+			const redirect = window.location.protocol + "//" + window.location.host + window.location.pathname.replace(/\/[^\/]*$/, "") + "/";
+			window.location.replace(redirect);
+		</script>
+	</head>
+	<body>
+		<h1>Page not found</h1>
+		<p>Redirecting to the app...</p>
+	</body>
+</html>

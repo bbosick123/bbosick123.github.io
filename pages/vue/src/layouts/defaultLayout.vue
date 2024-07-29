@@ -28,6 +28,7 @@ watch(isSidebarOpen, (newValue) => {
 		<div class="main">
 			<SideBar @close-sidebar="closeSidebar" />
 			<div class="contents">
+				11
 				<router-view />
 			</div>
 		</div>

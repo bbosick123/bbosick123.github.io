@@ -1,20 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vite App</title>
 		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-		<script>
-			// SPA Fallback을 위한 스크립트
-			(function () {
-				const path = window.location.pathname;
-				const isIndex = path === "/" || path.startsWith("/index.html");
-				if (!isIndex) {
-					window.history.replaceState({}, "", "/");
-				}
-			})();
-		</script>
 	</head>
 	<body>
 		<div id="app"></div>
