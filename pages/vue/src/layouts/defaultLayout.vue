@@ -27,7 +27,7 @@ watch(isSidebarOpen, (newValue) => {
 		<Header @toggle-sidebar="toggleSidebar" />
 		<div class="main">
 			<SideBar @close-sidebar="closeSidebar" />
-			<div class="contents">11<router-view /></div>
+			<div class="contents"><router-view /></div>
 		</div>
 	</div>
 </template>
