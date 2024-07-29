@@ -12,3 +12,12 @@
 		padding: 2.4rem;
 	}
 }
+
+@media screen and (max-width: 784px) {
+	.study {
+		.contents {
+			margin-left: 0;
+			padding: 1.6rem;
+		}
+	}
+}

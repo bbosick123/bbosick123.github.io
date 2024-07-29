@@ -6,7 +6,7 @@
 				<transition name="slide" @enter="enter" @leave="leave">
 					<ul v-if="item.open" class="sidebar__title-depth2">
 						<li v-for="(subitem, subindex) in item.subitems" :key="subindex">
-							<router-link :to="subitem.link" @click.stop>{{ subitem.label }}</router-link>
+							<router-link :to="subitem.link" @click.stop="$emit('close-sidebar')">{{ subitem.label }}</router-link>
 						</li>
 					</ul>
 				</transition>
@@ -104,7 +104,7 @@ onMounted(() => {
 	height: calc(100% - 60px);
 	padding: 2.4rem 0;
 	border-right: 1px solid #eaeaea;
-
+	background-color: #fff;
 	&__title-depth1 {
 		> li {
 			position: relative;
@@ -169,6 +169,19 @@ onMounted(() => {
 					}
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 784px) {
+	.sidebar {
+		width: 100%;
+		left: -100%;
+		transition: 0.4s left ease;
+	}
+	.sidebar--open {
+		.sidebar {
+			left: 0;
 		}
 	}
 }
