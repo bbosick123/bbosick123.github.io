@@ -24,7 +24,7 @@ watch(isSidebarOpen, (newValue) => {
 
 <template>
 	<div class="study" :class="{ 'sidebar--open': isSidebarOpen }">
-		<Header @toggle-sidebar="toggleSidebar" />
+		<Header @toggle-sidebar="toggleSidebar" @close-sidebar="closeSidebar" />
 		<div class="main">
 			<SideBar @close-sidebar="closeSidebar" />
 			<div class="contents"><router-view /></div>

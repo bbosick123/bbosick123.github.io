@@ -1,10 +1,7 @@
 <template>
 	<div>
 		<header class="header">
-			<div class="sidebar__button" @click="$emit('toggle-sidebar')">
-				<i class="xi-align-justify"></i>
-			</div>
-			<router-link to="/" @click.stop="$emit('close-sidebar')">처음으로</router-link>
+			<router-link to="/">처음으로</router-link>
 		</header>
 	</div>
 </template>

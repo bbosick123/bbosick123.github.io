@@ -6,8 +6,8 @@
 				<transition name="slide" @enter="enter" @leave="leave">
 					<ul v-if="item.open" class="sidebar__title-depth2">
 						<li v-for="(subitem, subindex) in item.subitems" :key="subindex">
-							<router-link :to="subitem.link" :target="subitem.newTab ? '_blank' : '_self'" @click.stop="$emit('close-sidebar')"
-								>{{ subitem.label }}
+							<router-link :to="subitem.link" @click.stop="$emit('close-sidebar')">
+								{{ subitem.label }}
 							</router-link>
 						</li>
 					</ul>
@@ -28,14 +28,7 @@ const items = ref([
 	{
 		title: "html",
 		open: open,
-		subitems: [
-			{ label: "소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개", link: "/html/intro" },
-			{ label: "소개", link: "/html/intro2" },
-			{ label: "소개", link: "/html/intro3" },
-			{ label: "소개", link: "/html/intro4" },
-			{ label: "소개", link: "/html/intro5" },
-			{ label: "소개", link: "/html/intro6" },
-		],
+		subitems: [{ label: "소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개", link: "/html/intro" }],
 	},
 	{
 		title: "css",
@@ -50,12 +43,18 @@ const items = ref([
 	{
 		title: "vue",
 		open: open,
-		subitems: [{ label: "소개", link: "/vue/intro" }],
+		subitems: [
+			{ label: "소개", link: "/vue/intro" },
+			{ label: "새로고침 이슈", link: "/vue/Refresh" },
+		],
 	},
 	{
 		title: "sample",
 		open: open,
-		subitems: [{ label: "소개", link: "/sample/intro", newTab: true }],
+		subitems: [
+			{ label: "HorizontalScrollPage", link: "/sample/HorizontalScroll" },
+			{ label: "CircleProgress", link: "/sample/CircleProgress" },
+		],
 	},
 ]);
 

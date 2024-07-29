@@ -5,10 +5,16 @@ import SampleLayout from "@/layouts/sampleLayout.vue";
 
 import DefaultView from "@/views/intro.vue";
 import HtmlIntro from "@/views/html/intro.vue";
+
 import CssIntro from "@/views/css/intro.vue";
+
 import JavascriptIntro from "@/views/javascript/intro.vue";
+
 import VueIntro from "@/views/vue/intro.vue";
-import SampleIntro from "@/views/sample/intro.vue";
+import VueRefresh from "@/views/vue/Refresh.vue";
+
+import HorizontalScroll from "@/views/sample/HorizontalScroll.vue";
+import CircleProgress from "@/views/sample/CircleProgress.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -42,6 +48,11 @@ const router = createRouter({
 					component: VueIntro,
 					meta: { title: "vue - intro" },
 				},
+				{
+					path: "vue/Refresh",
+					component: VueRefresh,
+					meta: { title: "vue - Refresh" },
+				},
 			],
 		},
 		{
@@ -49,9 +60,14 @@ const router = createRouter({
 			component: SampleLayout,
 			children: [
 				{
-					path: "intro",
-					component: SampleIntro,
-					meta: { title: "Sample Layout View" },
+					path: "HorizontalScroll",
+					component: HorizontalScroll,
+					meta: { title: "sample - HorizontalScroll" },
+				},
+				{
+					path: "CircleProgress",
+					component: CircleProgress,
+					meta: { title: "sample - CircleProgress" },
 				},
 			],
 		},
