@@ -1,14 +1,16 @@
 <template>
 	<div class="wrap">
-		<div class="progress-container" v-for="(percent, index) in percents" :key="index" :data-percent="percent">
-			<svg class="progress-circle" width="200" height="200" viewBox="0 0 200 200">
-				<!-- 배경 원 -->
-				<circle class="bg" cx="100" cy="100" r="90"></circle>
-				<!-- 진행 상태 원 -->
-				<circle class="progress" cx="100" cy="100" r="90"></circle>
-			</svg>
-			<!-- 진행 상태를 표시하는 텍스트 -->
-			<div class="progress-text">0%</div>
+		<div class="flex">
+			<div class="progress-container" v-for="(percent, index) in percents" :key="index" :data-percent="percent">
+				<svg class="progress-circle" width="200" height="200" viewBox="0 0 200 200">
+					<!-- 배경 원 -->
+					<circle class="bg" cx="100" cy="100" r="90"></circle>
+					<!-- 진행 상태 원 -->
+					<circle class="progress" cx="100" cy="100" r="90"></circle>
+				</svg>
+				<!-- 진행 상태를 표시하는 텍스트 -->
+				<div class="progress-text">0%</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -64,10 +66,14 @@ export default {
 	display: flex; /* 컨텐츠를 중앙에 배치 */
 	justify-content: center; /* 수평 중앙 정렬 */
 	align-items: center; /* 수직 중앙 정렬 */
-	height: 100vh; /* 화면 전체 높이 */
 	background-color: #f0f0f0; /* 배경색 설정 */
+	height: 100vh;
 	margin: 0; /* 기본 여백 제거 */
 	flex-wrap: wrap; /* 화면에 여유 공간이 생기면 아이템을 줄 바꿈 */
+	.flex {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .progress-container {
@@ -109,6 +115,11 @@ export default {
 @media screen and (max-width: 784px) {
 	.wrap {
 		flex-direction: column;
+		height: auto;
+		.flex {
+			padding-top: 10rem;
+			flex-direction: column;
+		}
 	}
 }
 </style>

@@ -28,6 +28,7 @@ export default {
 	background-color: #fff;
 	border-bottom: 1px solid #eaeaea;
 	font-size: 1.6rem;
+
 	.sidebar__button {
 		display: none;
 		cursor: pointer;
