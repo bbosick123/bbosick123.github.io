@@ -1,8 +1,11 @@
 import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { resolve } from "path";
+import { resolve, dirname } from "path";
 import { copyFileSync } from "fs";
+
+// __dirname을 정의합니다.
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,11 +14,16 @@ export default defineConfig({
 		{
 			name: "copy-404",
 			apply: "build",
-			buildEnd() {
-				// 빌드 후 404.html 파일을 dist 폴더로 복사
-				const src = resolve(__dirname, "404.html");
-				const dest = resolve(__dirname, "dist/404.html");
-				copyFileSync(src, dest);
+			closeBundle() {
+				try {
+					// 404.html 파일을 루트 디렉토리에서 dist 디렉토리로 복사합니다.
+					const src = resolve(__dirname, "404.html");
+					const dest = resolve(__dirname, "dist/404.html");
+					copyFileSync(src, dest);
+					console.log("404.html copied to dist directory");
+				} catch (error) {
+					console.error("Error copying 404.html:", error);
+				}
 			},
 		},
 	],
