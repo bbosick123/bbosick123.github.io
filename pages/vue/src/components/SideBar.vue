@@ -6,7 +6,9 @@
 				<transition name="slide" @enter="enter" @leave="leave">
 					<ul v-if="item.open" class="sidebar__title-depth2">
 						<li v-for="(subitem, subindex) in item.subitems" :key="subindex">
-							<router-link :to="subitem.link" @click.stop="$emit('close-sidebar')">{{ subitem.label }}</router-link>
+							<router-link :to="subitem.link" :target="subitem.newTab ? '_blank' : '_self'" @click.stop="$emit('close-sidebar')"
+								>{{ subitem.label }}
+							</router-link>
 						</li>
 					</ul>
 				</transition>
@@ -53,7 +55,7 @@ const items = ref([
 	{
 		title: "sample",
 		open: open,
-		subitems: [{ label: "소개", link: "/sample/intro" }],
+		subitems: [{ label: "소개", link: "/sample/index", newTab: true }],
 	},
 ]);
 
