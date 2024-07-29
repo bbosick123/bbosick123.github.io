@@ -55,7 +55,7 @@ const items = ref([
 	{
 		title: "sample",
 		open: open,
-		subitems: [{ label: "소개", link: "/sample/index", newTab: true }],
+		subitems: [{ label: "소개", link: "/sample/intro", newTab: true }],
 	},
 ]);
 

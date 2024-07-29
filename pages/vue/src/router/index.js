@@ -8,7 +8,7 @@ import HtmlIntro from "@/views/html/intro.vue";
 import CssIntro from "@/views/css/intro.vue";
 import JavascriptIntro from "@/views/javascript/intro.vue";
 import VueIntro from "@/views/vue/intro.vue";
-import SampleIntro from "@/views/sample/index.vue";
+import SampleIntro from "@/views/sample/intro.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -49,7 +49,7 @@ const router = createRouter({
 			component: SampleLayout,
 			children: [
 				{
-					path: "index",
+					path: "intro",
 					component: SampleIntro,
 					meta: { title: "Sample Layout View" },
 				},
