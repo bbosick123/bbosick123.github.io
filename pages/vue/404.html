@@ -1,6 +1,17 @@
-import { fileURLToPath, URL } from "node:url"; import { defineConfig } from "vite"; import vue from "@vitejs/plugin-vue"; import { resolve, dirname } from
-"path"; import { copyFileSync } from "fs"; // __dirname을 정의합니다. const __dirname = dirname(fileURLToPath(import.meta.url)); // https://vitejs.dev/config/
-export default defineConfig({ plugins: [ vue(), { name: "copy-404", apply: "build", closeBundle() { try { // 404.html 파일을 루트 디렉토리에서 dist 디렉토리로
-복사합니다. const src = resolve(__dirname, "404.html"); const dest = resolve(__dirname, "dist/404.html"); copyFileSync(src, dest); console.log("404.html copied
-to dist directory"); } catch (error) { console.error("Error copying 404.html:", error); } }, }, ], resolve: { alias: { "@": fileURLToPath(new URL("./src",
-import.meta.url)), }, }, base: process.env.NODE_ENV === "production" ? "/pages/blog/" : "/", });
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Page not found</title>
+		<script>
+			// GitHub Pages에서 SPA 라우팅 문제를 해결하기 위한 스크립트
+			const redirectPath = window.location.origin + "/pages/blog/"; // 루트 경로로 리디렉션
+			window.location.replace(redirectPath);
+		</script>
+	</head>
+	<body>
+		<h1>Page not found</h1>
+		<p>Redirecting to the app...</p>
+	</body>
+</html>

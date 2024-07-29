@@ -16,11 +16,11 @@ export default defineConfig({
 			apply: "build",
 			closeBundle() {
 				try {
-					// 404.html 파일을 루트 디렉토리에서 dist 디렉토리로 복사합니다.
+					// 404.html 파일을 루트 디렉토리에서 pages/blog 디렉토리로 복사합니다.
 					const src = resolve(__dirname, "404.html");
-					const dest = resolve(__dirname, "dist/404.html");
+					const dest = resolve(__dirname, "pages/blog/404.html");
 					copyFileSync(src, dest);
-					console.log("404.html copied to dist directory");
+					console.log("404.html copied to pages/blog directory");
 				} catch (error) {
 					console.error("Error copying 404.html:", error);
 				}
