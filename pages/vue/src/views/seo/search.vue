@@ -3,16 +3,16 @@
 		<h4 class="contents__title">Google Search Console</h4>
 		<ContentItem date="2004년 07월 30일">
 			오늘은 구글 검색창에 내 포트폴리오와 블로그를 등록 해봤음. 첫 회사에 다닐때 많이 했던거라 익숙했다. 바로 구글에 웹마스터도구 라고 검색.<br /><br />
-			<img src="/public/images/240730_search01.png" alt="" />
+			<img src="/images/240730_search01.png" alt="" />
 			<br /><br />
 			옛날엔 웹마스터도구 였는데 지금은 서치콘솔로 바뀌어있었다. <br /><br />
-			<img src="/public/images/240730_search02.png" alt="" />
+			<img src="/images/240730_search02.png" alt="" />
 			<br /><br />
 			URL에 내 포트폴리오 주소 입력해주면, 소유권 확인해야한다고 나온다.<br /><br />
-			<img src="/public/images/240730_search03.png" alt="" />
+			<img src="/images/240730_search03.png" alt="" />
 			<br /><br />
 			여러가지 방법이 있는데 난 html 파일 다운받아서 ROOT 폴더에 넣는 방식을 선택했다.(제일 쉬움) <br /><br />
-			<img src="/public/images/240730_search04.png" alt="" /><br /><br />
+			<img src="/images/240730_search04.png" alt="" /><br /><br />
 			루트에 파일 다운받아 넣고 완료 누르면 끝~. 바로 검색하면 나오는건 아니고 몇일 기다려야 됐던걸로 기억한다. <br /><br /><br /><br />
 			그리고 내페이지 head 태그에 meta 태그를 넣어주면 된다.<br /><br />
 			<div
@@ -129,7 +129,7 @@
 			name="keywords" - 페이지 키워드 인데 요즘엔 검색엔진들이 키워드는 무시한다고한다. 악용 사례 때문이라고 함. <br /><br />
 
 			아래 property="og:~" 은 카톡에 내 url 입력했을때 나오는거라고 한다.<br /><br />
-			<img src="/public/images/240730_search05.png" alt="" /><br /><br />
+			<img src="/images/240730_search05.png" alt="" /><br /><br />
 			그래서 카톡에 보내봄.
 		</ContentItem>
 	</div>
