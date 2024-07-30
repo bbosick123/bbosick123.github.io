@@ -32,15 +32,15 @@ export default {
 		& + .contents__item {
 			margin-top: 2.4rem;
 		}
+		img {
+			max-width: 100%;
+		}
 	}
 	&__date {
 		line-height: 1;
 		margin-bottom: 2rem;
 		border-bottom: 1px solid #eee;
 		padding-bottom: 1.2rem;
-	}
-	img {
-		max-width: 100%;
 	}
 }
 </style>

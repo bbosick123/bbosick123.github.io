@@ -13,6 +13,8 @@ import JavascriptIntro from "@/views/javascript/intro.vue";
 import Vue404 from "@/views/vue/404.vue";
 import VueVitePluginPage from "@/views/vue/VitePluginPage.vue";
 
+import SeoSearch from "@/views/seo/search.vue";
+
 import HorizontalScroll from "@/views/sample/HorizontalScroll.vue";
 import CircleProgress from "@/views/sample/CircleProgress.vue";
 
@@ -52,6 +54,11 @@ const router = createRouter({
 					path: "vue/VitePluginPage",
 					component: VueVitePluginPage,
 					meta: { title: "vue - vite-plugin-page" },
+				},
+				{
+					path: "seo/search",
+					component: SeoSearch,
+					meta: { title: "seo - search" },
 				},
 			],
 		},

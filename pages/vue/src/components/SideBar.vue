@@ -41,7 +41,7 @@ const items = ref([
 	// 	subitems: [{ label: "소개", link: "/javascript/intro" }],
 	// },
 	{
-		title: "vue",
+		title: "VUE",
 		open: open,
 		subitems: [
 			{ label: "404error", link: "/vue/404" },
@@ -49,11 +49,16 @@ const items = ref([
 		],
 	},
 	{
-		title: "sample",
+		title: "SEO",
+		open: open,
+		subitems: [{ label: "Google Search Console", link: "/seo/search" }],
+	},
+	{
+		title: "SAMPLE",
 		open: open,
 		subitems: [
-			{ label: "HorizontalScrollPage", link: "/sample/HorizontalScroll" },
-			{ label: "CircleProgress", link: "/sample/CircleProgress" },
+			{ label: "Horizontal ScrollPage", link: "/sample/HorizontalScroll" },
+			{ label: "Circle Progress", link: "/sample/CircleProgress" },
 		],
 	},
 ]);

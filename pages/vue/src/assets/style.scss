@@ -21,6 +21,10 @@
 			font-weight: 700;
 			margin-bottom: 2.8rem;
 		}
+
+		img {
+			max-width: 100%;
+		}
 	}
 }
 
@@ -30,6 +34,9 @@
 			width: 100%;
 			margin-left: 0;
 			padding: 1.6rem;
+			img {
+				max-width: 100%;
+			}
 		}
 	}
 }
