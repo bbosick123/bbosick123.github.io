@@ -56,8 +56,16 @@ const items = ref([
 		subitems: [{ label: "Google Search Console", link: "/seo/search" }],
 	},
 	{
-		title: "SAMPLE",
+		title: "TOOLS",
 		open: open,
+		subitems: [
+			{ label: "ScreenShot", link: "/tools/screenshot" },
+			{ label: "Code Snippet", link: "/tools/codesnippet" },
+		],
+	},
+	{
+		title: "SAMPLE",
+		open: false,
 		subitems: [
 			{ label: "Horizontal ScrollPage", link: "/sample/HorizontalScroll" },
 			{ label: "Circle Progress", link: "/sample/CircleProgress" },
