@@ -20,11 +20,14 @@ export default {
 <style lang="scss" scoped>
 .contents {
 	&__item {
+		width: 80rem;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 2rem;
 		border-radius: 0.8rem;
 		border: 0.1rem solid #eee;
 		box-shadow: 1px 1px 1px 1px #eee;
 		background-color: #fff;
-		padding: 2rem;
 		color: #666;
 		& + .contents__item {
 			margin-top: 2.4rem;
