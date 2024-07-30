@@ -1,8 +1,8 @@
 <template>
 	<aside class="sidebar">
 		<ul class="sidebar__title-depth1">
-			<li v-for="(item, index) in items" :key="index" @click="toggle(index)" :class="{ 'sidebar__title-depth1--active': item.open }">
-				<h3>{{ item.title }}</h3>
+			<li v-for="(item, index) in items" :key="index" :class="{ 'sidebar__title-depth1--active': item.open }">
+				<h3 @click="toggle(index)">{{ item.title }}</h3>
 				<transition name="slide" @enter="enter" @leave="leave">
 					<ul v-if="item.open" class="sidebar__title-depth2">
 						<li v-for="(subitem, subindex) in item.subitems" :key="subindex">
