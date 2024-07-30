@@ -557,6 +557,9 @@ html {
 }
 .lys-main .lys-inner {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (max-width: 1024px) {
   .lys-main .lys-inner {
