@@ -40,6 +40,7 @@ a {
 @media screen and (max-width: 784px) {
 	.header {
 		justify-content: space-between;
+		padding: 1.6rem;
 		.sidebar__button {
 			display: block;
 			font-size: 30px;

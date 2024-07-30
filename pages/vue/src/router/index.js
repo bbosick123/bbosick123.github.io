@@ -3,8 +3,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import DefaultLayout from "@/layouts/defaultLayout.vue";
 import SampleLayout from "@/layouts/sampleLayout.vue";
 
-import NotFound from "@/views/404.vue";
-
 import DefaultView from "@/views/intro.vue";
 import HtmlIntro from "@/views/html/intro.vue";
 
@@ -12,8 +10,7 @@ import CssIntro from "@/views/css/intro.vue";
 
 import JavascriptIntro from "@/views/javascript/intro.vue";
 
-import VueIntro from "@/views/vue/intro.vue";
-import VueRefresh from "@/views/vue/Refresh.vue";
+import Vue404 from "@/views/vue/404.vue";
 import VueVitePluginPage from "@/views/vue/VitePluginPage.vue";
 
 import HorizontalScroll from "@/views/sample/HorizontalScroll.vue";
@@ -22,11 +19,6 @@ import CircleProgress from "@/views/sample/CircleProgress.vue";
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
 	routes: [
-		{
-			path: "/:pathMatch(.*)*",
-			name: "NotFound",
-			component: NotFound,
-		},
 		{
 			path: "/",
 			component: DefaultLayout,
@@ -52,14 +44,9 @@ const router = createRouter({
 					meta: { title: "javascript - intro" },
 				},
 				{
-					path: "vue/intro",
-					component: VueIntro,
-					meta: { title: "vue - intro" },
-				},
-				{
-					path: "vue/Refresh",
-					component: VueRefresh,
-					meta: { title: "vue - Refresh" },
+					path: "vue/404",
+					component: Vue404,
+					meta: { title: "vue - 404" },
 				},
 				{
 					path: "vue/VitePluginPage",

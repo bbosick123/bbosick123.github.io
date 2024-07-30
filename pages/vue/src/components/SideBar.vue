@@ -25,27 +25,26 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 
 const items = ref([
-	{
-		title: "html",
-		open: open,
-		subitems: [{ label: "소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개", link: "/html/intro" }],
-	},
-	{
-		title: "css",
-		open: open,
-		subitems: [{ label: "소개", link: "/css/intro" }],
-	},
-	{
-		title: "javascript",
-		open: open,
-		subitems: [{ label: "소개", link: "/javascript/intro" }],
-	},
+	// {
+	// 	title: "html",
+	// 	open: open,
+	// 	subitems: [{ label: "소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개", link: "/html/intro" }],
+	// },
+	// {
+	// 	title: "css",
+	// 	open: open,
+	// 	subitems: [{ label: "소개", link: "/css/intro" }],
+	// },
+	// {
+	// 	title: "javascript",
+	// 	open: open,
+	// 	subitems: [{ label: "소개", link: "/javascript/intro" }],
+	// },
 	{
 		title: "vue",
 		open: open,
 		subitems: [
-			{ label: "소개", link: "/vue/intro" },
-			{ label: "새로고침 이슈", link: "/vue/Refresh" },
+			{ label: "404error", link: "/vue/404" },
 			{ label: "vite-plugin-page", link: "/vue/VitePluginPage" },
 		],
 	},
