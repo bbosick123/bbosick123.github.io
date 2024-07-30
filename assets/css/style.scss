@@ -6,7 +6,7 @@ html {
 	@include tablet {
 		min-width: auto;
 	}
-	@include mobile {
+	@include tablet {
 		width: 100%;
 		min-width: auto;
 	}
@@ -16,17 +16,16 @@ html {
 	font-size: 1.6rem;
 	line-height: 1.5;
 	color: $white;
-	@include mobile {
-		font-size: 1.2rem;
+	@include tablet {
 	}
 	.pc {
-		@include mobile {
+		@include tablet {
 			display: none;
 		}
 	}
 	.mo {
 		display: none;
-		@include mobile {
+		@include tablet {
 			display: inline;
 		}
 	}
@@ -39,16 +38,16 @@ html {
 			letter-spacing: normal;
 			font-family: "Kanit", sans-serif;
 			margin-bottom: 4.6rem;
-			@include mobile {
+			@include tablet {
 				font-size: 4rem;
 			}
 			&--lg {
 				font-size: 8rem;
-				@include mobile {
+				@include tablet {
 					font-size: 5rem;
 				}
 				&::before {
-					@include mobile {
+					@include tablet {
 						bottom: -2.7rem;
 					}
 				}
@@ -63,7 +62,7 @@ html {
 				width: 10.2rem;
 				height: 0.3rem;
 				background-color: $primary;
-				@include mobile {
+				@include tablet {
 					bottom: -2rem;
 				}
 			}
@@ -73,7 +72,7 @@ html {
 				font-size: 1.8rem;
 				font-weight: 500;
 				letter-spacing: 0.3rem;
-				@include mobile {
+				@include tablet {
 					margin-bottom: 3.4rem;
 				}
 			}
@@ -81,7 +80,7 @@ html {
 		&-primary {
 			color: $primary;
 			&:nth-of-type(4) {
-				@include mobile {
+				@include tablet {
 					white-space: nowrap;
 				}
 			}
@@ -94,7 +93,7 @@ html {
 		@include tablet {
 			width: 100%;
 		}
-		@include mobile {
+		@include tablet {
 			width: 100%;
 			padding: 0 2rem;
 		}
@@ -104,19 +103,19 @@ html {
 		background-color: #282828;
 		font-family: "Kanit", sans-serif;
 		color: $white;
-		@include mobile {
+		@include tablet {
 			padding-bottom: 3.4rem;
 		}
 		.lys-inner {
 			display: flex;
 			justify-content: space-between;
-			@include mobile {
+			@include tablet {
 				flex-direction: column-reverse;
 				align-items: center;
 			}
 		}
 		&__logo {
-			@include mobile {
+			@include tablet {
 				margin-top: 5.4rem;
 				text-align: center;
 			}
@@ -126,7 +125,7 @@ html {
 				font-size: 4.6rem;
 				color: $primary;
 				letter-spacing: normal;
-				@include mobile {
+				@include tablet {
 					font-size: 6rem;
 					padding-bottom: 0.2rem;
 				}
@@ -142,13 +141,13 @@ html {
 			}
 		}
 		&__gnb {
-			@include mobile {
+			@include tablet {
 				overflow: hidden;
 				margin-left: auto;
 			}
 			&-menu {
 				display: none;
-				@include mobile {
+				@include tablet {
 					width: 2rem;
 					height: 1.5rem;
 					display: flex;
@@ -165,20 +164,20 @@ html {
 			}
 			ul {
 				display: flex;
-				@include mobile {
+				@include tablet {
 					flex-direction: column;
 				}
 				li {
 					font-size: 2rem;
 					font-weight: normal;
 					letter-spacing: -0.05rem;
-					@include mobile {
+					@include tablet {
 						font-size: 3rem;
 					}
 					&:hover {
 						a {
 							color: $primary;
-							@include mobile {
+							@include tablet {
 								color: $white;
 							}
 						}
@@ -186,12 +185,12 @@ html {
 				}
 				li + li {
 					margin-left: 4.8rem;
-					@include mobile {
+					@include tablet {
 						margin-top: 2rem;
 						margin-left: 0;
 					}
 				}
-				@include mobile {
+				@include tablet {
 					position: fixed;
 					top: 0;
 					left: 0;
@@ -236,15 +235,16 @@ html {
 
 	&-main {
 		overflow-x: hidden;
+		display: flex;
+		justify-content: center;
 		height: calc(100vh - 12.6rem);
-		padding-top: 15rem;
 		background-color: #282828;
-		@include mobile {
+		@include tablet {
 			position: relative;
 			height: auto;
 			padding-top: 0;
 			&::before {
-				@include mobile {
+				@include tablet {
 					content: "";
 					display: block;
 					position: absolute;
@@ -257,8 +257,7 @@ html {
 		}
 		.lys-inner {
 			position: relative;
-			height: 100%;
-			@include mobile {
+			@include tablet {
 				padding-top: 8.2rem;
 				padding-bottom: 8.2rem;
 				height: auto;
@@ -271,7 +270,7 @@ html {
 				letter-spacing: 0.35rem;
 				font-weight: 500;
 				color: $primary;
-				@include mobile {
+				@include tablet {
 					font-size: 1.4rem;
 					letter-spacing: 0.28rem;
 				}
@@ -282,7 +281,7 @@ html {
 		}
 		.text-title--lg {
 			margin-top: 1.8rem;
-			@include mobile {
+			@include tablet {
 				margin-top: 1.8rem;
 				line-height: 1.16;
 			}
@@ -294,14 +293,14 @@ html {
 			position: absolute;
 			bottom: 0;
 			right: 5rem;
-			@include mobile {
+			@include tablet {
 				position: relative;
 				right: unset;
 				text-align: center;
 			}
 			img {
 				position: absolute;
-				@include mobile {
+				@include tablet {
 					bottom: unset;
 					right: unset;
 					max-width: 10rem;
@@ -312,7 +311,7 @@ html {
 				bottom: 0;
 				width: 58.8rem;
 				transform: translateX(50%);
-				@include mobile {
+				@include tablet {
 					position: static !important;
 					transform: unset;
 					padding-top: 21rem;
@@ -325,7 +324,7 @@ html {
 				width: 14.3rem;
 				transform: translateX(50%);
 				animation: imgShake02 1.5s infinite;
-				@include mobile {
+				@include tablet {
 					top: 12.8rem;
 					right: unset;
 					left: 50%;
@@ -340,7 +339,7 @@ html {
 				bottom: 35.7rem;
 				transform: scaleX(-1);
 				animation: imgShake03 2s infinite;
-				@include mobile {
+				@include tablet {
 					top: 12.9rem;
 					right: unset;
 					left: 1%;
@@ -354,7 +353,7 @@ html {
 				bottom: 21.3rem;
 				transform: scaleX(-1);
 				animation: imgShake03 1.5s infinite;
-				@include mobile {
+				@include tablet {
 					width: 11%;
 					top: 21.8rem;
 					left: 15%;
@@ -366,7 +365,7 @@ html {
 				right: 8rem;
 				bottom: 46.5rem;
 				animation: imgShake 2.5s infinite;
-				@include mobile {
+				@include tablet {
 					top: 8.5rem;
 					left: 20%;
 					width: 15%;
@@ -377,7 +376,7 @@ html {
 				right: -21rem;
 				bottom: 39.7rem;
 				animation: imgShake 3s infinite;
-				@include mobile {
+				@include tablet {
 					top: 12rem;
 					right: unset;
 					left: 74%;
@@ -390,7 +389,7 @@ html {
 				bottom: 21.7rem;
 				animation: imgShake 1.5s infinite;
 				animation: imgShake 2s infinite;
-				@include mobile {
+				@include tablet {
 					width: auto;
 					top: 20rem;
 					left: 94%;
@@ -402,7 +401,7 @@ html {
 				right: -35rem;
 				bottom: 47.7rem;
 				animation: imgShake 2s infinite;
-				@include mobile {
+				@include tablet {
 					width: auto;
 					top: 8.2rem;
 					height: 10%;
@@ -412,18 +411,18 @@ html {
 	}
 	&-about {
 		&--bg {
-			padding: 12rem 20rem;
+			padding: 12rem 0;
 			background-color: #000;
 			@include tablet {
 				padding: 12rem 0;
 			}
-			@include mobile {
+			@include tablet {
 				padding: 9.4rem 0 6rem;
 			}
 			&2 {
 				padding: 10.2rem 0 17.5rem;
 				background-color: #18211f;
-				@include mobile {
+				@include tablet {
 					background-color: #282828;
 					padding: 5rem 0;
 				}
@@ -435,18 +434,18 @@ html {
 			justify-content: center;
 			gap: 7.4rem;
 			margin: 0 auto;
-			@include mobile {
+			@include tablet {
 				flex-direction: column;
 			}
 			p {
-				@include mobile {
+				@include tablet {
 					line-height: 2;
 				}
 			}
 		}
 		&__keyword {
 			margin-top: 4.6rem;
-			@include mobile {
+			@include tablet {
 				margin-top: 0;
 				margin: 0 auto;
 				padding: 0 5rem;
@@ -517,9 +516,6 @@ html {
 			&:not(:first-child) {
 				margin-top: 11rem;
 			}
-			@include mobile {
-				font-size: 1.6rem;
-			}
 		}
 		dl {
 			display: flex;
@@ -530,23 +526,20 @@ html {
 				font-family: "Kanit", sans-serif;
 				color: $primary;
 				letter-spacing: -0.05rem;
-				@include mobile {
-					font-size: 1.2rem;
+				@include tablet {
+					font-size: 1.6rem;
 				}
 			}
 			dd {
 				font-size: 1.6rem;
 				color: $white;
-				@include mobile {
-					font-size: 1.2rem;
-				}
 			}
 			&.type02 {
 				display: block;
 				dt {
 					margin-bottom: 2.8rem;
 					font-size: 1.6rem;
-					@include mobile {
+					@include tablet {
 						font-size: 1.2rem;
 					}
 					span {
@@ -579,7 +572,7 @@ html {
 				}
 			}
 			& + dl {
-				@include mobile {
+				@include tablet {
 					margin-top: 1rem;
 					align-items: flex-start;
 				}
@@ -599,7 +592,7 @@ html {
 					}
 				}
 			}
-			@include mobile {
+			@include tablet {
 				grid-template-columns: 1fr 1fr 1fr;
 			}
 		}
@@ -609,7 +602,7 @@ html {
 		padding-top: 11.9rem;
 		padding-bottom: 13.5rem;
 		@include mobile {
-			padding-bottom: 6.6rem;
+			padding-bottom: 24rem;
 		}
 		.text-title + .lys-experience__item {
 			margin-top: 10rem;
@@ -618,7 +611,7 @@ html {
 			& + & {
 				margin-top: 13.4rem;
 				padding-bottom: 31.6rem;
-				@include mobile {
+				@include tablet {
 					margin-top: 5.4rem;
 					padding-bottom: 27rem;
 					.lys-experience__text {
@@ -633,7 +626,7 @@ html {
 				}
 				.lys-experience__item:last-child {
 					max-height: 4rem;
-					@include mobile {
+					@include tablet {
 						max-height: 2rem;
 						min-height: 3rem;
 					}
@@ -645,7 +638,7 @@ html {
 		}
 		&__item {
 			display: flex;
-			@include mobile {
+			@include tablet {
 				position: relative;
 				flex-direction: column;
 				padding-left: 8rem;
@@ -665,11 +658,11 @@ html {
 			&:last-child {
 				align-items: flex-start;
 				min-height: 4rem;
-				@include mobile {
+				@include tablet {
 					max-height: 2rem;
 				}
 				.lys-experience__scroll {
-					@include mobile {
+					@include tablet {
 						max-height: 1rem;
 					}
 				}
@@ -686,17 +679,16 @@ html {
 			color: $primary;
 			letter-spacing: -0.05rem;
 			opacity: 0.2;
-			@include mobile {
+			@include tablet {
 				width: auto;
 				min-width: auto;
-				font-size: 1.2rem;
 			}
 			span {
 				display: none;
-				@include mobile {
+				@include tablet {
 					display: inline;
-					padding-left: 1.4rem;
 					font-family: "Noto Sans KR", sans-serif;
+					font-size: 1.6rem;
 					font-weight: 500;
 					color: $white;
 				}
@@ -707,7 +699,7 @@ html {
 			width: 18rem;
 			min-width: 18rem;
 			min-height: 2rem;
-			@include mobile {
+			@include tablet {
 				min-width: auto;
 				position: absolute;
 				left: 0;
@@ -726,7 +718,7 @@ html {
 				overflow: hidden;
 				text-indent: -999rem;
 				z-index: 1;
-				@include mobile {
+				@include tablet {
 					width: 1.4rem;
 					height: 1.4rem;
 					margin-left: 2.2rem;
@@ -751,7 +743,7 @@ html {
 		&__text {
 			position: relative;
 			padding-bottom: 8rem;
-			@include mobile {
+			@include tablet {
 				margin-top: 0.8rem;
 				padding-bottom: 4rem;
 			}
@@ -760,13 +752,13 @@ html {
 				& ~ dl {
 					margin-top: 1.8rem;
 					padding-left: 13.2rem;
-					@include mobile {
+					@include tablet {
 						flex-direction: row !important;
 						padding-left: 0;
 					}
 					dt {
 						margin-right: 0.4rem;
-						@include mobile {
+						@include tablet {
 							display: block;
 							min-width: auto;
 							width: auto;
@@ -782,7 +774,7 @@ html {
 					min-width: 8.5rem;
 					width: 8.5rem;
 					margin-right: 4.4rem;
-					@include mobile {
+					@include tablet {
 						display: none;
 					}
 				}
@@ -791,14 +783,14 @@ html {
 						> dt {
 							min-width: 6rem;
 							margin-right: 2.8rem;
-							@include mobile {
+							@include tablet {
 								min-width: 4.5rem;
 								margin-right: 2.6rem;
 							}
 						}
 						& + dl {
 							margin-top: 1.4rem;
-							@include mobile {
+							@include tablet {
 								margin-top: 0;
 							}
 						}
@@ -807,7 +799,7 @@ html {
 				& + p {
 					margin-top: 4rem;
 					padding-left: 13.2rem;
-					@include mobile {
+					@include tablet {
 						margin-top: 1.7rem;
 						padding-left: 0;
 					}
@@ -822,18 +814,18 @@ html {
 		background-color: #000;
 		padding-top: 12rem;
 		padding-bottom: 20rem;
-		@include mobile {
+		@include tablet {
 			padding-top: 10rem;
 			padding-bottom: 6.8rem;
 		}
 		.text-title {
 			margin-bottom: 13.8rem;
-			@include mobile {
+			@include tablet {
 				margin-bottom: 8.8rem;
 			}
 		}
 		.swiper {
-			@include mobile {
+			@include tablet {
 				padding: 0 2rem;
 			}
 		}
@@ -849,7 +841,7 @@ html {
 			width: 1.3rem;
 			height: 1.3rem;
 			margin: 0 1rem !important;
-			@include mobile {
+			@include tablet {
 				width: 1.4rem;
 				height: 1.4rem;
 			}
@@ -862,12 +854,12 @@ html {
 			position: relative;
 			width: 76.7rem;
 			height: 49.9rem;
-			background: url("../images/bg-slide.svg") no-repeat center;
+			background: #fff url("../images/bg-slide.svg") no-repeat center;
 			cursor: pointer;
-			@include mobile {
-				width: 32rem;
-				height: 39rem;
-				background: url("../images/bg-slide-mo.png") no-repeat top center / 32rem;
+			border-radius: 0.8rem;
+			@include tablet {
+				width: 100%;
+				background: #fff url("../images/bg-slide-mo.png") no-repeat top center / 100%;
 			}
 			&::before {
 				content: "";
@@ -892,7 +884,10 @@ html {
 					height: calc(100% - 3.5rem);
 					background-color: #000;
 					opacity: 0.8;
-					@include mobile {
+					@include tablet {
+						height: calc(100% - 2rem);
+					}
+					@include tablet {
 						height: calc(100% - 1.5rem);
 					}
 				}
@@ -909,14 +904,14 @@ html {
 			font-family: "Kanit", sans-serif;
 			color: #000;
 			margin-left: 20rem;
-			@include mobile {
+			@include tablet {
 				height: 1.5rem;
 				margin-left: 8.4rem;
 			}
 		}
 		&__img {
-			@include mobile {
-				height: 19.3rem;
+			@include tablet {
+				height: calc(100% - 1.5rem);
 				overflow: hidden;
 				border-radius: 0 0 0.8rem 0.8rem;
 			}
@@ -935,17 +930,13 @@ html {
 			padding: 0 4.3rem;
 			color: #fff;
 			transition: all ease-in-out 0.3s;
-			@include mobile {
+			@include tablet {
 				padding: 0 1.6rem;
 			}
 			&-title {
 				position: relative;
 				margin-bottom: 7rem;
 				font-size: 2rem;
-				@include mobile {
-					font-size: 1.2rem;
-					margin-bottom: 4.6rem;
-				}
 				&::after {
 					content: "";
 					display: block;
@@ -954,7 +945,7 @@ html {
 					width: 4.3rem;
 					height: 0.3rem;
 					background-color: $primary;
-					@include mobile {
+					@include tablet {
 						bottom: unset;
 						top: -2rem;
 					}
@@ -968,13 +959,13 @@ html {
 				> dt {
 					min-width: 6.4rem;
 					margin-right: 1rem;
-					@include mobile {
+					@include tablet {
 						min-width: 4.8rem;
 						margin-right: 1rem;
 					}
 				}
 				dd {
-					@include mobile {
+					@include tablet {
 						display: flex;
 						flex-grow: 1;
 					}
@@ -1001,7 +992,7 @@ html {
 					padding: 0 4.3rem;
 					background: transparent;
 					border: 0.1rem solid $primary;
-					@include mobile {
+					@include tablet {
 						width: 100%;
 					}
 				}
@@ -1015,7 +1006,7 @@ html {
 			width: 10rem;
 			line-height: normal;
 			color: #000;
-			@include mobile {
+			@include tablet {
 				width: 6.4rem;
 				height: 1.3rem;
 			}
@@ -1033,7 +1024,7 @@ html {
 				top: 50%;
 				right: 1.2rem;
 				transform: translateY(-50%);
-				@include mobile {
+				@include tablet {
 					top: 0.5rem;
 					right: 0.6rem;
 				}
@@ -1045,14 +1036,14 @@ html {
 		padding-top: 12rem;
 		padding-bottom: 20rem;
 		background-color: #282828;
-		@include mobile {
+		@include tablet {
 			padding-top: 9.6rem;
 			padding-bottom: 9.6rem;
 		}
 		.text-title {
 			margin-bottom: 13rem;
 			text-align: center;
-			@include mobile {
+			@include tablet {
 				margin-bottom: 20rem;
 			}
 			&::before {
@@ -1068,7 +1059,7 @@ html {
 			font-weight: 700;
 			font-size: 8rem;
 			font-family: "Kanit", sans-serif;
-			@include mobile {
+			@include tablet {
 				font-size: 4rem;
 				margin-bottom: 3.6rem;
 			}
@@ -1086,10 +1077,10 @@ html {
 					// animation: test 6s linear;
 					// top: unset;
 					// left: unset;
-					// @include mobile {
+					// @include tablet {
 					// 	display: none;
 					// }
-					@include mobile {
+					@include tablet {
 						left: 50%;
 						transform: translate(-50%, -160%);
 					}
@@ -1097,12 +1088,12 @@ html {
 			}
 			& + p {
 				text-align: center;
-				@include mobile {
+				@include tablet {
 					line-height: 2;
 				}
 			}
 			span {
-				@include mobile {
+				@include tablet {
 					font-size: 3.6rem;
 					white-space: nowrap;
 				}
@@ -1114,7 +1105,7 @@ html {
 			align-items: flex-start;
 			justify-content: center;
 			font-family: "Kanit", sans-serif;
-			@include mobile {
+			@include tablet {
 				margin-top: 4rem;
 			}
 			dt {
@@ -1123,13 +1114,13 @@ html {
 			}
 			dd {
 				width: 17rem;
-				@include mobile {
+				@include tablet {
 					width: 14.3rem;
 					font-size: 1.4rem;
 				}
 				p {
 					font-size: 2rem;
-					@include mobile {
+					@include tablet {
 						font-size: 1.4rem;
 					}
 				}

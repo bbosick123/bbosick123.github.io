@@ -277,7 +277,7 @@ html {
     min-width: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   body,
   html {
     width: 100%;
@@ -290,12 +290,7 @@ html {
   line-height: 1.5;
   color: #fff;
 }
-@media (max-width: 768px) {
-  .lys {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys .pc {
     display: none;
   }
@@ -303,7 +298,7 @@ html {
 .lys .mo {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys .mo {
     display: inline;
   }
@@ -317,7 +312,7 @@ html {
   font-family: "Kanit", sans-serif;
   margin-bottom: 4.6rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys .text-title {
     font-size: 4rem;
   }
@@ -325,12 +320,12 @@ html {
 .lys .text-title--lg {
   font-size: 8rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys .text-title--lg {
     font-size: 5rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys .text-title--lg::before {
     bottom: -2.7rem;
   }
@@ -346,7 +341,7 @@ html {
   height: 0.3rem;
   background-color: #5cd2b9;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys .text-title::before {
     bottom: -2rem;
   }
@@ -358,7 +353,7 @@ html {
   font-weight: 500;
   letter-spacing: 0.3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys .text-title p {
     margin-bottom: 3.4rem;
   }
@@ -366,7 +361,7 @@ html {
 .lys .text-primary {
   color: #5cd2b9;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys .text-primary:nth-of-type(4) {
     white-space: nowrap;
   }
@@ -381,7 +376,7 @@ html {
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-inner {
     width: 100%;
     padding: 0 2rem;
@@ -393,7 +388,7 @@ html {
   font-family: "Kanit", sans-serif;
   color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header {
     padding-bottom: 3.4rem;
   }
@@ -402,13 +397,13 @@ html {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header .lys-inner {
     flex-direction: column-reverse;
     align-items: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header__logo {
     margin-top: 5.4rem;
     text-align: center;
@@ -421,7 +416,7 @@ html {
   color: #5cd2b9;
   letter-spacing: normal;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header__logo p {
     font-size: 6rem;
     padding-bottom: 0.2rem;
@@ -436,7 +431,7 @@ html {
   color: #fff;
   letter-spacing: 0.9rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header__gnb {
     overflow: hidden;
     margin-left: auto;
@@ -445,7 +440,7 @@ html {
 .lys-header__gnb-menu {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header__gnb-menu {
     width: 2rem;
     height: 1.5rem;
@@ -464,7 +459,7 @@ html {
 .lys-header__gnb ul {
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header__gnb ul {
     flex-direction: column;
   }
@@ -474,7 +469,7 @@ html {
   font-weight: normal;
   letter-spacing: -0.05rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header__gnb ul li {
     font-size: 3rem;
   }
@@ -482,7 +477,7 @@ html {
 .lys-header__gnb ul li:hover a {
   color: #5cd2b9;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header__gnb ul li:hover a {
     color: #fff;
   }
@@ -490,13 +485,13 @@ html {
 .lys-header__gnb ul li + li {
   margin-left: 4.8rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header__gnb ul li + li {
     margin-top: 2rem;
     margin-left: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-header__gnb ul {
     position: fixed;
     top: 0;
@@ -537,18 +532,19 @@ html {
 }
 .lys-main {
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
   height: calc(100vh - 12.6rem);
-  padding-top: 15rem;
   background-color: #282828;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main {
     position: relative;
     height: auto;
     padding-top: 0;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
+@media (max-width: 1024px) and (max-width: 1024px) {
   .lys-main::before {
     content: "";
     display: block;
@@ -561,9 +557,8 @@ html {
 }
 .lys-main .lys-inner {
   position: relative;
-  height: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main .lys-inner {
     padding-top: 8.2rem;
     padding-bottom: 8.2rem;
@@ -579,7 +574,7 @@ html {
   font-weight: 500;
   color: #5cd2b9;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__text > span {
     font-size: 1.4rem;
     letter-spacing: 0.28rem;
@@ -591,7 +586,7 @@ html {
 .lys-main .text-title--lg {
   margin-top: 1.8rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main .text-title--lg {
     margin-top: 1.8rem;
     line-height: 1.16;
@@ -605,7 +600,7 @@ html {
   bottom: 0;
   right: 5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img {
     position: relative;
     right: unset;
@@ -615,7 +610,7 @@ html {
 .lys-main__img img {
   position: absolute;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img img {
     bottom: unset;
     right: unset;
@@ -628,7 +623,7 @@ html {
   width: 58.8rem;
   transform: translateX(50%);
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img01 {
     position: static !important;
     transform: unset;
@@ -643,7 +638,7 @@ html {
   transform: translateX(50%);
   animation: imgShake02 1.5s infinite;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img02 {
     top: 12.8rem;
     right: unset;
@@ -660,7 +655,7 @@ html {
   transform: scaleX(-1);
   animation: imgShake03 2s infinite;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img03 {
     top: 12.9rem;
     right: unset;
@@ -676,7 +671,7 @@ html {
   transform: scaleX(-1);
   animation: imgShake03 1.5s infinite;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img04 {
     width: 11%;
     top: 21.8rem;
@@ -690,7 +685,7 @@ html {
   bottom: 46.5rem;
   animation: imgShake 2.5s infinite;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img05 {
     top: 8.5rem;
     left: 20%;
@@ -703,7 +698,7 @@ html {
   bottom: 39.7rem;
   animation: imgShake 3s infinite;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img06 {
     top: 12rem;
     right: unset;
@@ -718,7 +713,7 @@ html {
   animation: imgShake 1.5s infinite;
   animation: imgShake 2s infinite;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img07 {
     width: auto;
     top: 20rem;
@@ -732,7 +727,7 @@ html {
   bottom: 47.7rem;
   animation: imgShake 2s infinite;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-main__img08 {
     width: auto;
     top: 8.2rem;
@@ -740,7 +735,7 @@ html {
   }
 }
 .lys-about--bg {
-  padding: 12rem 20rem;
+  padding: 12rem 0;
   background-color: #000;
 }
 @media (max-width: 1024px) {
@@ -748,7 +743,7 @@ html {
     padding: 12rem 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-about--bg {
     padding: 9.4rem 0 6rem;
   }
@@ -757,7 +752,7 @@ html {
   padding: 10.2rem 0 17.5rem;
   background-color: #18211f;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-about--bg2 {
     background-color: #282828;
     padding: 5rem 0;
@@ -770,12 +765,12 @@ html {
   gap: 7.4rem;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-about__item {
     flex-direction: column;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-about__item p {
     line-height: 2;
   }
@@ -783,7 +778,7 @@ html {
 .lys-about__keyword {
   margin-top: 4.6rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-about__keyword {
     margin-top: 0;
     margin: 0 auto;
@@ -851,11 +846,6 @@ html {
 .lys-about__title:not(:first-child) {
   margin-top: 11rem;
 }
-@media (max-width: 768px) {
-  .lys-about__title {
-    font-size: 1.6rem;
-  }
-}
 .lys-about dl {
   display: flex;
   align-items: center;
@@ -867,19 +857,14 @@ html {
   color: #5cd2b9;
   letter-spacing: -0.05rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-about dl dt {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 .lys-about dl dd {
   font-size: 1.6rem;
   color: #fff;
-}
-@media (max-width: 768px) {
-  .lys-about dl dd {
-    font-size: 1.2rem;
-  }
 }
 .lys-about dl.type02 {
   display: block;
@@ -888,7 +873,7 @@ html {
   margin-bottom: 2.8rem;
   font-size: 1.6rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-about dl.type02 dt {
     font-size: 1.2rem;
   }
@@ -918,7 +903,7 @@ html {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-about dl + dl {
     margin-top: 1rem;
     align-items: flex-start;
@@ -941,7 +926,7 @@ html {
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-about ul.mo {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -953,7 +938,7 @@ html {
 }
 @media (max-width: 768px) {
   .lys-experience {
-    padding-bottom: 6.6rem;
+    padding-bottom: 24rem;
   }
 }
 .lys-experience .text-title + .lys-experience__item {
@@ -963,7 +948,7 @@ html {
   margin-top: 13.4rem;
   padding-bottom: 31.6rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__section + .lys-experience__section {
     margin-top: 5.4rem;
     padding-bottom: 27rem;
@@ -981,7 +966,7 @@ html {
 .lys-experience__section + .lys-experience__section .lys-experience__item:last-child {
   max-height: 4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__section + .lys-experience__section .lys-experience__item:last-child {
     max-height: 2rem;
     min-height: 3rem;
@@ -993,7 +978,7 @@ html {
 .lys-experience__item {
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__item {
     position: relative;
     flex-direction: column;
@@ -1014,12 +999,12 @@ html {
   align-items: flex-start;
   min-height: 4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__item:last-child {
     max-height: 2rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__item:last-child .lys-experience__scroll {
     max-height: 1rem;
   }
@@ -1036,21 +1021,20 @@ html {
   letter-spacing: -0.05rem;
   opacity: 0.2;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__year {
     width: auto;
     min-width: auto;
-    font-size: 1.2rem;
   }
 }
 .lys-experience__year span {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__year span {
     display: inline;
-    padding-left: 1.4rem;
     font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.6rem;
     font-weight: 500;
     color: #fff;
   }
@@ -1061,7 +1045,7 @@ html {
   min-width: 18rem;
   min-height: 2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__scroll {
     min-width: auto;
     position: absolute;
@@ -1083,7 +1067,7 @@ html {
   text-indent: -999rem;
   z-index: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__scroll-btn {
     width: 1.4rem;
     height: 1.4rem;
@@ -1109,7 +1093,7 @@ html {
   position: relative;
   padding-bottom: 8rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__text {
     margin-top: 0.8rem;
     padding-bottom: 4rem;
@@ -1122,7 +1106,7 @@ html {
   margin-top: 1.8rem;
   padding-left: 13.2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__text > p ~ dl {
     flex-direction: row !important;
     padding-left: 0;
@@ -1131,7 +1115,7 @@ html {
 .lys-experience__text > p ~ dl dt {
   margin-right: 0.4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__text > p ~ dl dt {
     display: block;
     min-width: auto;
@@ -1148,7 +1132,7 @@ html {
   width: 8.5rem;
   margin-right: 4.4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__text > dl > dt {
     display: none;
   }
@@ -1157,7 +1141,7 @@ html {
   min-width: 6rem;
   margin-right: 2.8rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__text > dl > dd > dl > dt {
     min-width: 4.5rem;
     margin-right: 2.6rem;
@@ -1166,7 +1150,7 @@ html {
 .lys-experience__text > dl > dd > dl + dl {
   margin-top: 1.4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__text > dl > dd > dl + dl {
     margin-top: 0;
   }
@@ -1175,7 +1159,7 @@ html {
   margin-top: 4rem;
   padding-left: 13.2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-experience__text > dl + p {
     margin-top: 1.7rem;
     padding-left: 0;
@@ -1189,7 +1173,7 @@ html {
   padding-top: 12rem;
   padding-bottom: 20rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio {
     padding-top: 10rem;
     padding-bottom: 6.8rem;
@@ -1198,12 +1182,12 @@ html {
 .lys-portfolio .text-title {
   margin-bottom: 13.8rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio .text-title {
     margin-bottom: 8.8rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio .swiper {
     padding: 0 2rem;
   }
@@ -1221,7 +1205,7 @@ html {
   height: 1.3rem;
   margin: 0 1rem !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio .swiper-pagination-clickable .swiper-pagination-bullet {
     width: 1.4rem;
     height: 1.4rem;
@@ -1235,14 +1219,14 @@ html {
   position: relative;
   width: 76.7rem;
   height: 49.9rem;
-  background: url("../images/bg-slide.svg") no-repeat center;
+  background: #fff url("../images/bg-slide.svg") no-repeat center;
   cursor: pointer;
+  border-radius: 0.8rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio .swiper-slide {
-    width: 32rem;
-    height: 39rem;
-    background: url("../images/bg-slide-mo.png") no-repeat top center/32rem;
+    width: 100%;
+    background: #fff url("../images/bg-slide-mo.png") no-repeat top center/100%;
   }
 }
 .lys-portfolio .swiper-slide::before {
@@ -1268,7 +1252,12 @@ html {
   background-color: #000;
   opacity: 0.8;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .lys-portfolio .swiper-slide.active::before {
+    height: calc(100% - 2rem);
+  }
+}
+@media (max-width: 1024px) {
   .lys-portfolio .swiper-slide.active::before {
     height: calc(100% - 1.5rem);
   }
@@ -1285,15 +1274,15 @@ html {
   color: #000;
   margin-left: 20rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio__url {
     height: 1.5rem;
     margin-left: 8.4rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio__img {
-    height: 19.3rem;
+    height: calc(100% - 1.5rem);
     overflow: hidden;
     border-radius: 0 0 0.8rem 0.8rem;
   }
@@ -1313,7 +1302,7 @@ html {
   color: #fff;
   transition: all ease-in-out 0.3s;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio__info {
     padding: 0 1.6rem;
   }
@@ -1322,12 +1311,6 @@ html {
   position: relative;
   margin-bottom: 7rem;
   font-size: 2rem;
-}
-@media (max-width: 768px) {
-  .lys-portfolio__info-title {
-    font-size: 1.2rem;
-    margin-bottom: 4.6rem;
-  }
 }
 .lys-portfolio__info-title::after {
   content: "";
@@ -1338,7 +1321,7 @@ html {
   height: 0.3rem;
   background-color: #5cd2b9;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio__info-title::after {
     bottom: unset;
     top: -2rem;
@@ -1354,13 +1337,13 @@ html {
   min-width: 6.4rem;
   margin-right: 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio__info > dl > dt {
     min-width: 4.8rem;
     margin-right: 1rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio__info > dl dd {
     display: flex;
     flex-grow: 1;
@@ -1387,7 +1370,7 @@ html {
   background: transparent;
   border: 0.1rem solid #5cd2b9;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio__info-btn a {
     width: 100%;
   }
@@ -1401,7 +1384,7 @@ html {
   line-height: normal;
   color: #000;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio__progress {
     width: 6.4rem;
     height: 1.3rem;
@@ -1422,7 +1405,7 @@ html {
   right: 1.2rem;
   transform: translateY(-50%);
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-portfolio__progress p {
     top: 0.5rem;
     right: 0.6rem;
@@ -1434,7 +1417,7 @@ html {
   padding-bottom: 20rem;
   background-color: #282828;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-contact {
     padding-top: 9.6rem;
     padding-bottom: 9.6rem;
@@ -1444,7 +1427,7 @@ html {
   margin-bottom: 13rem;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-contact .text-title {
     margin-bottom: 20rem;
   }
@@ -1462,7 +1445,7 @@ html {
   font-size: 8rem;
   font-family: "Kanit", sans-serif;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-contact__title {
     font-size: 4rem;
     margin-bottom: 3.6rem;
@@ -1477,7 +1460,7 @@ html {
   top: 0;
   transform: translateY(-70%);
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-contact__title p img {
     left: 50%;
     transform: translate(-50%, -160%);
@@ -1486,12 +1469,12 @@ html {
 .lys-contact__title + p {
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-contact__title + p {
     line-height: 2;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-contact__title span {
     font-size: 3.6rem;
     white-space: nowrap;
@@ -1504,7 +1487,7 @@ html {
   justify-content: center;
   font-family: "Kanit", sans-serif;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-contact dl {
     margin-top: 4rem;
   }
@@ -1516,7 +1499,7 @@ html {
 .lys-contact dl dd {
   width: 17rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-contact dl dd {
     width: 14.3rem;
     font-size: 1.4rem;
@@ -1525,7 +1508,7 @@ html {
 .lys-contact dl dd p {
   font-size: 2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lys-contact dl dd p {
     font-size: 1.4rem;
   }

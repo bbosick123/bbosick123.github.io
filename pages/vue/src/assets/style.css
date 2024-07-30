@@ -276,11 +276,14 @@ time {
   min-height: 100%;
 }
 .study .contents {
-  width: 100%;
+  width: calc(100% - 28rem);
   margin-left: 28rem;
   padding: 2.4rem;
 }
 .study .contents__title {
+  width: 80rem;
+  max-width: 100%;
+  margin: 0 auto;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2.8rem;
@@ -288,6 +291,7 @@ time {
 
 @media screen and (max-width: 784px) {
   .study .contents {
+    width: 100%;
     margin-left: 0;
     padding: 1.6rem;
   }

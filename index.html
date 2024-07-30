@@ -389,7 +389,7 @@
 					<div class="swiper mySwiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class="lys-portfolio__url">https://bbosick123.github.io/pages/emro/</div>
+								<div class="lys-portfolio__url"></div>
 								<div class="lys-portfolio__img">
 									<img src="./assets/images/pic-portfolio07.png" alt="EMRO" />
 								</div>
@@ -427,7 +427,7 @@
 							</div>
 
 							<div class="swiper-slide">
-								<div class="lys-portfolio__url">https://slearn.seoul.go.kr/</div>
+								<div class="lys-portfolio__url"></div>
 								<div class="lys-portfolio__img">
 									<img src="./assets/images/pic-portfolio01.png" alt="서울런" />
 								</div>
@@ -464,7 +464,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="lys-portfolio__url">https://siheung.gseek.kr/member/rl/main.do</div>
+								<div class="lys-portfolio__url"></div>
 								<div class="lys-portfolio__img">
 									<img src="./assets/images/pic-portfolio02.png" alt="시흥시 ssoc" />
 								</div>
@@ -501,7 +501,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="lys-portfolio__url">URL 없음.</div>
+								<div class="lys-portfolio__url"></div>
 								<div class="lys-portfolio__img">
 									<img src="./assets/images/pic-portfolio03.png" alt="서울대학교 bedside station" />
 								</div>
@@ -535,7 +535,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="lys-portfolio__url">https://www.bigdata-finance.kr/main.do</div>
+								<div class="lys-portfolio__url"></div>
 								<div class="lys-portfolio__img">
 									<img src="./assets/images/pic-portfolio04.png" alt="금융빅데이터플랫폼" />
 								</div>
@@ -572,7 +572,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="lys-portfolio__url">URL 없음.</div>
+								<div class="lys-portfolio__url"></div>
 								<div class="lys-portfolio__img">
 									<img src="./assets/images/pic-portfolio05.png" alt="헬스온 관리자 페이지" />
 								</div>
@@ -606,7 +606,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="lys-portfolio__url">http://www.baekje.re.kr/</div>
+								<div class="lys-portfolio__url"></div>
 								<div class="lys-portfolio__img">
 									<img src="./assets/images/pic-portfolio06.png" alt="백제학회 이미지" />
 								</div>
@@ -709,25 +709,24 @@
 			var swiper = new Swiper(".mySwiper", {
 				breakpoints: {
 					360: {
-						slidesPerView: "auto",
+						slidesPerView: "1",
 						spaceBetween: 20,
 					},
 					768: {
-						slidesPerView: "auto",
-						spaceBetween: 73,
+						slidesPerView: "2",
+						spaceBetween: 28,
 					},
 					1024: {
 						slidesPerView: "auto",
 						spaceBetween: 73,
+						centeredSlides: true,
 					},
 				},
 				pagination: {
 					el: ".swiper-pagination",
 					clickable: true,
 				},
-				slidesPerView: "auto",
-				spaceBetween: 73,
-				centeredSlides: true,
+
 				slideToClickedSlide: true,
 				a11y: {
 					prevSlideMessage: "이전 슬라이드",
