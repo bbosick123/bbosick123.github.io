@@ -2,17 +2,19 @@
 	<aside class="sidebar">
 		<ul class="sidebar__title-depth1">
 			<li v-for="(item, index) in items" :key="index" :class="{ 'sidebar__title-depth1--active': item.open }">
-				<h3 @click="toggle(index)">{{ item.title }}</h3>
+				<h3 @click="toggle(index)">{{ item.title }} <i v-if="item.subitems.length > 0" class="xi-angle-down"></i></h3>
+
 				<transition name="slide" @enter="enter" @leave="leave">
 					<ul v-if="item.open" class="sidebar__title-depth2">
 						<li v-for="(subitem, subindex) in item.subitems" :key="subindex">
 							<router-link :to="subitem.link" @click.stop="$emit('close-sidebar')">
-								<h4>{{ subitem.label }}</h4>
+								<h4>
+									{{ subitem.label }}
+								</h4>
 							</router-link>
 						</li>
 					</ul>
 				</transition>
-				<i v-if="item.subitems.length > 0" class="xi-angle-down"></i>
 			</li>
 		</ul>
 	</aside>
@@ -127,6 +129,7 @@ onMounted(() => {
 				right: 2rem;
 				top: 0.8rem;
 				font-weight: 700;
+				font-size: 1.6rem;
 			}
 
 			& + li {
