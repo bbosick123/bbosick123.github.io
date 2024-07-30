@@ -113,6 +113,7 @@ onMounted(() => {
 	padding: 2.4rem 0;
 	border-right: 1px solid #eaeaea;
 	background-color: #fff;
+	z-index: 1;
 	&__title-depth1 {
 		> li {
 			position: relative;

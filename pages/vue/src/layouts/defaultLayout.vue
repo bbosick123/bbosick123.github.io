@@ -3,7 +3,7 @@ import { ref, watch } from "vue";
 import Header from "../components/Header.vue";
 import SideBar from "../components/SideBar.vue";
 
-const isSidebarOpen = ref(false);
+const isSidebarOpen = ref(true);
 
 function toggleSidebar() {
 	isSidebarOpen.value = !isSidebarOpen.value;
