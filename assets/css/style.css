@@ -1146,7 +1146,7 @@ html {
 }
 @media (max-width: 1024px) {
   .lys-experience__text > dl > dd > dl > dt {
-    min-width: 4.5rem;
+    min-width: 6rem;
     margin-right: 2.6rem;
   }
 }
