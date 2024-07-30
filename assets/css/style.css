@@ -1224,7 +1224,7 @@ html {
   height: 49.9rem;
   background: #fff url("../images/bg-slide.svg") no-repeat center;
   cursor: pointer;
-  border-radius: 0.8rem;
+  border-radius: 1rem;
 }
 @media (max-width: 1024px) {
   .lys-portfolio .swiper-slide {
