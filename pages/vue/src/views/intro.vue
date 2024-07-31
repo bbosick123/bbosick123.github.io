@@ -7,7 +7,7 @@
 		mobile : 010 9921 7187 <br />
 		kakaotalk : bbosick123 <br /><br />
 
-		<!-- <a href="https://bbosick123.github.io/" target="_blink">포트폴리오 페이지 바로가기</a> -->
+		<a href="https://bbosick123.github.io/" target="_blink">포트폴리오 페이지 바로가기</a>
 	</div>
 </template>
 

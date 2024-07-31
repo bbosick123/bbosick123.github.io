@@ -1,6 +1,7 @@
 <template>
 	<div>
-		<h4 class="contents__title">일기</h4>
+		<h4 class="contents__title">History</h4>
+		<ContentItem date="2024년 07월 31일"> javascript - 동기 / 비동기, Callback 업로드</ContentItem>
 		<ContentItem date="2024년 07월 31일">
 			7월29일에 블로그 페이지 뼈대 만들고 30일에 너무 허전해보여서 tools랑 뭐 몇가지 추가를 했고 오늘은.. 그냥 지금 내 상태나 뭐.. 상황? 그런걸 남기고싶어서
 			일기장처럼 쓰려고 diary를 추가한다. 앞으로 내 방향성 뭐 그런것도 쓸거임. <br /><br />
@@ -24,6 +25,12 @@
 
 			지금까지 올려놓은 페이지들은 놀랍게도 블로그 형식이지만 게시판에서 글쓰기로 업로드하는게 아니라 한땀한땀 코딩 한거다. 그리고 index 페이지가 너무 심심한데
 			다른 블로그들은 보통 게시글 썸네일이나 뭐 그런게 있더라. 게시판도 한번 만들어볼거다.
+		</ContentItem>
+		<ContentItem date="2024년 07월 30일"> vue - 404error / seo - google search console / tools - screenshot, code snippet 업로드 </ContentItem>
+		<ContentItem date="2024년 07월 29일">
+			블로그 오픈.
+			<br /><br />
+			vue - 404error , vite-plugin-page 업로드
 		</ContentItem>
 	</div>
 </template>
