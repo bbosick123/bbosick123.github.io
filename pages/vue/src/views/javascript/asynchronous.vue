@@ -74,7 +74,8 @@
 			<strong>async</strong>는 비동기 처리를 하는 키워드이다. jquery를 불러오는 스크립트와 아래 .hello 를 hide() 시키는 스크립트가 비동기처리로 동시에
 			수행된다고 생각해보자. jquery를 불러오지 못한 상태에서 아래 $('.hello').hide(); 가 먼저 수행된다면 에러가 날것이다. <br /><br />
 
-			문제점만 알아본 이유는, 이런 문제를 해결하기위해 <strong>Callback</strong> 이라는 개념을 알아야 하기 때문이다.<br /><br />
+			문제점만 알아본 이유는, 이런 문제를 해결하기위해 <strong>Callback</strong> 이라는 개념을 알아야 하기 때문이다.<br />
+			비동기 -> Callback -> promise 로 이어질 것이다. <br /><br />
 			링크 - <router-link to="./callback">Callback</router-link>
 		</ContentItem>
 	</div>

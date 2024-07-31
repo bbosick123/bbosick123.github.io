@@ -38,11 +38,11 @@ const items = ref([
 	// 	subitems: [{ label: "소개", link: "/css/intro" }],
 	// },
 
-	{
-		title: "일기",
-		open: open,
-		subitems: [{ label: "일기", link: "/diary/diary" }],
-	},
+	// {
+	// 	title: "일기",
+	// 	open: open,
+	// 	subitems: [{ label: "일기", link: "/diary/diary" }],
+	// },
 	{
 		title: "javascript",
 		open: open,
