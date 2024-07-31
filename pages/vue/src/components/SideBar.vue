@@ -37,11 +37,22 @@ const items = ref([
 	// 	open: open,
 	// 	subitems: [{ label: "소개", link: "/css/intro" }],
 	// },
-	// {
-	// 	title: "javascript",
-	// 	open: open,
-	// 	subitems: [{ label: "소개", link: "/javascript/intro" }],
-	// },
+
+	{
+		title: "일기",
+		open: open,
+		subitems: [{ label: "일기", link: "/diary/diary" }],
+	},
+	{
+		title: "javascript",
+		open: open,
+		subitems: [
+			{ label: "동기 / 비동기", link: "/javascript/asynchronous" },
+			{ label: "Callback", link: "/javascript/callback" },
+			{ label: "Promise", link: "/javascript/promise" },
+			{ label: "Async / Await", link: "/javascript/asyncawait" },
+		],
+	},
 	{
 		title: "VUE",
 		open: open,

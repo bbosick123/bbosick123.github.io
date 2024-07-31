@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h4 class="contents__title">Code Snippet</h4>
-		<ContentItem date="2004년 07월 30일">
+		<ContentItem date="2024년 07월 30일">
 			Code Snippet 이란? <br /><br />
 			<img src="/images/240730_tools03.png" alt="" /><br /><br />
 			블로그 같은데서 내가 적은 코드 보여주는걸 Code Snippet 라고 한다. Chat GPT 에게 물어본 스샷. TMI의 신..<br /><br />
@@ -79,7 +79,7 @@
 								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #010101">&lt;</span
 									><span style="color: #066de2">ContentItem</span>&nbsp;<span style="color: #0a9989">date</span>=<span style="color: #df5000"
-										>"2004년&nbsp;07월&nbsp;30일"</span
+										>"2024년&nbsp;07월&nbsp;30일"</span
 									><span style="color: #0a9989"></span><span style="color: #010101">&gt;</span>
 								</div>
 								<div style="padding: 0 6px; white-space: pre; line-height: 130%">

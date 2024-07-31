@@ -2,6 +2,7 @@
 .study {
 	font-size: 1.6rem;
 	color: #333;
+	line-height: 1.6;
 	.main {
 		display: flex;
 		padding-top: 6rem;
@@ -29,6 +30,10 @@
 		a {
 			color: #5cd2b9;
 			text-decoration: underline;
+		}
+
+		strong {
+			color: #333;
 		}
 	}
 }

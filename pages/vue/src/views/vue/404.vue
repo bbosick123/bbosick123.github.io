@@ -1,13 +1,13 @@
 <template>
 	<div>
 		<h4 class="contents__title">404error</h4>
-		<ContentItem date="2004년 07월 29일">
+		<ContentItem date="2024년 07월 29일">
 			VUE로 만든 페이지에서 사용자가 새로고침이나 url을 직접 입력해서 접속할때 페이지 연결이 안되는 현상이 있음. <br /><br />
 			SPA 페이지들에 공통적으로 일어난다고 하고, 검색해보니 쉽게 해결방법을 찾을 수 있었음. <br /><br />
 			보통 백엔드에서 index.html 로 강제로 보낸다고 함. 프론트에서도 할수있긴 한데 좀 애매하다고 하는데 왜인진 모르겠음.<br /><br />
 			검색해보니 404페이지를 만들고, 404페이지에서 index.html 으로 보내면 된다는데, 하다가 잘 안되가지구 일단 보류한 상태.
 		</ContentItem>
-		<ContentItem date="2004년 07월 30일">
+		<ContentItem date="2024년 07월 30일">
 			404.html 파일 넣은 위치가 잘못된거였음.<br />
 			<img src="/images/240730_404.png" alt="" /><br />
 			내 폴더 구조가 저렇게 되있고 ROOT 에 있는 index.html 은 내 포트폴리오 홈페이지이고, 이 블로그는 vue 폴더에서 작업해서 build 후 blog 폴더로 옴겨서 깃에
@@ -164,14 +164,14 @@
 			</div>
 		</ContentItem>
 		<!-- <div class="contents__item">
-			<div class="contents__date">2004년 07월 29일</div>
+			<div class="contents__date">2024년 07월 29일</div>
 			VUE로 만든 페이지에서 사용자가 새로고침이나 url을 직접 입력해서 접속할때 페이지 연결이 안되는 현상이 있음. <br /><br />
 			SPA 페이지들에 공통적으로 일어난다고 하고, 검색해보니 쉽게 해결방법을 찾을 수 있었음. <br /><br />
 			보통 백엔드에서 index.html 로 강제로 보낸다고 함. 프론트에서도 할수있긴 한데 좀 애매하다고 하는데 왜인진 모르겠음.<br /><br />
 			검색해보니 404페이지를 만들고, 404페이지에서 index.html 으로 보내면 된다는데, 하다가 잘 안되가지구 일단 보류한 상태.
 		</div>
 		<div class="contents__item">
-			<div class="contents__date">2004년 07월 30일</div>
+			<div class="contents__date">2024년 07월 30일</div>
 			
 		</div> -->
 	</div>

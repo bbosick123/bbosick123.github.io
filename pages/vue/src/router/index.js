@@ -8,7 +8,10 @@ import HtmlIntro from "@/views/html/intro.vue";
 
 import CssIntro from "@/views/css/intro.vue";
 
-import JavascriptIntro from "@/views/javascript/intro.vue";
+import JavascriptAsynchronous from "@/views/javascript/asynchronous.vue";
+import JavascriptCallback from "@/views/javascript/callback.vue";
+import JavascriptPromise from "@/views/javascript/promise.vue";
+import JavascriptAsyncAwait from "@/views/javascript/asyncawait.vue";
 
 import Vue404 from "@/views/vue/404.vue";
 import VueVitePluginPage from "@/views/vue/VitePluginPage.vue";
@@ -21,6 +24,8 @@ import ToolsCodeSnippet from "@/views/tools/codesnippet.vue";
 import HorizontalScroll from "@/views/sample/HorizontalScroll.vue";
 import CircleProgress from "@/views/sample/CircleProgress.vue";
 
+import Diary from "@/views/diary/diary.vue";
+
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
 	routes: [
@@ -28,6 +33,11 @@ const router = createRouter({
 			path: "/",
 			component: DefaultLayout,
 			children: [
+				{
+					path: "diary/diary",
+					component: Diary,
+					meta: { title: "용식s 일기장" },
+				},
 				{
 					path: "",
 					component: DefaultView,
@@ -44,9 +54,24 @@ const router = createRouter({
 					meta: { title: "css - intro" },
 				},
 				{
-					path: "javascript/intro",
-					component: JavascriptIntro,
-					meta: { title: "javascript - intro" },
+					path: "javascript/asynchronous",
+					component: JavascriptAsynchronous,
+					meta: { title: "javascript - 동기 / 비동기" },
+				},
+				{
+					path: "javascript/callback",
+					component: JavascriptCallback,
+					meta: { title: "javascript - Callback" },
+				},
+				{
+					path: "javascript/promise",
+					component: JavascriptPromise,
+					meta: { title: "javascript - promise" },
+				},
+				{
+					path: "javascript/asyncawait",
+					component: JavascriptAsyncAwait,
+					meta: { title: "javascript - async/await" },
 				},
 				{
 					path: "vue/404",

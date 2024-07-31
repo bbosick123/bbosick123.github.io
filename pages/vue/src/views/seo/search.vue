@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h4 class="contents__title">Google Search Console</h4>
-		<ContentItem date="2004년 07월 30일">
+		<ContentItem date="2024년 07월 30일">
 			오늘은 구글 검색창에 내 포트폴리오와 블로그를 등록 해봤음. 첫 회사에 다닐때 많이 했던거라 익숙했다. 바로 구글에 웹마스터도구 라고 검색.<br /><br />
 			<img src="/images/240730_search01.png" alt="" />
 			<br /><br />

@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h4 class="contents__title">ScreenShot</h4>
-		<ContentItem date="2004년 07월 30일">
+		<ContentItem date="2024년 07월 30일">
 			내가 쓰는 스크린샷 툴을 적어보려고 한다.<br /><br />
 			직업학교다닐때 아는 동생이 나한테 추천해준걸 지금까지 쓰고있다. <br /><br />
 			바로 "<strong>pick pick</strong>" 이라는 프로그램이다. <br /><br />
