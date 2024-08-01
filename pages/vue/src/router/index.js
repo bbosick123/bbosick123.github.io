@@ -12,6 +12,7 @@ import JavascriptAsynchronous from "@/views/javascript/asynchronous.vue";
 import JavascriptCallback from "@/views/javascript/callback.vue";
 import JavascriptPromise from "@/views/javascript/promise.vue";
 import JavascriptAsyncAwait from "@/views/javascript/asyncawait.vue";
+import JavascriptApi from "@/views/javascript/api.vue";
 
 import Vue404 from "@/views/vue/404.vue";
 import VueVitePluginPage from "@/views/vue/VitePluginPage.vue";
@@ -24,7 +25,7 @@ import ToolsCodeSnippet from "@/views/tools/codesnippet.vue";
 import HorizontalScroll from "@/views/sample/HorizontalScroll.vue";
 import CircleProgress from "@/views/sample/CircleProgress.vue";
 
-import Diary from "@/views/diary/diary.vue";
+import History from "@/views/history/history.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,8 +35,8 @@ const router = createRouter({
 			component: DefaultLayout,
 			children: [
 				{
-					path: "diary/diary",
-					component: Diary,
+					path: "history/history",
+					component: History,
 					meta: { title: "용식s 일기장" },
 				},
 				{
@@ -72,6 +73,11 @@ const router = createRouter({
 					path: "javascript/asyncawait",
 					component: JavascriptAsyncAwait,
 					meta: { title: "javascript - async/await" },
+				},
+				{
+					path: "javascript/api",
+					component: JavascriptApi,
+					meta: { title: "javascript - Api" },
 				},
 				{
 					path: "vue/404",
@@ -117,6 +123,7 @@ const router = createRouter({
 			],
 		},
 	],
+
 	scrollBehavior(to, from, savedPosition) {
 		return { top: 0 };
 	},

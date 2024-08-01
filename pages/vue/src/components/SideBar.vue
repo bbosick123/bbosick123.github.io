@@ -41,16 +41,17 @@ const items = ref([
 	{
 		title: "History",
 		open: open,
-		subitems: [{ label: "History", link: "/diary/diary" }],
+		subitems: [{ label: "History", link: "/history/history" }],
 	},
 	{
-		title: "javascript",
+		title: "Javascript",
 		open: open,
 		subitems: [
 			{ label: "동기 / 비동기", link: "/javascript/asynchronous" },
 			{ label: "Callback", link: "/javascript/callback" },
 			{ label: "Promise", link: "/javascript/promise" },
 			{ label: "Async / Await", link: "/javascript/asyncawait" },
+			{ label: "Api", link: "/javascript/api" },
 		],
 	},
 	{

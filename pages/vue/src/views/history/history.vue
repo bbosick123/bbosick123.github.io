@@ -1,10 +1,10 @@
 <template>
 	<div>
 		<h4 class="contents__title">History</h4>
+		<ContentItem date="2024년 08월 01일"> javascript - Promise, Async / Await, Api 업로드</ContentItem>
 		<ContentItem date="2024년 07월 31일"> javascript - 동기 / 비동기, Callback 업로드</ContentItem>
 		<ContentItem date="2024년 07월 31일">
-			7월29일에 블로그 페이지 뼈대 만들고 30일에 너무 허전해보여서 tools랑 뭐 몇가지 추가를 했고 오늘은.. 그냥 지금 내 상태나 뭐.. 상황? 그런걸 남기고싶어서
-			일기장처럼 쓰려고 diary를 추가한다. 앞으로 내 방향성 뭐 그런것도 쓸거임. <br /><br />
+			7월29일에 블로그 페이지 뼈대 만들고 30일에 너무 허전해보여서 tools랑 뭐 몇가지 추가 했다. 그리고 이건 그냥.. 잡담? <br /><br />
 			한달정도 구직활동을 해봤는데 html, css, javascript만 다룰줄 아는 퍼블리셔는 별로 메리트가 없었다. 지인분한테 물어봤을때도 본인 회사에는 퍼블리셔가
 			그만두면 그자리는 퍼블리셔로 채우지않고 프론트앤드로 채운다는 얘기도 들었다. <br /><br />
 
@@ -38,7 +38,7 @@
 <script>
 import ContentItem from "@/components/ContentItem.vue";
 export default {
-	name: "Diary",
+	name: "History",
 	components: {
 		ContentItem,
 	},
