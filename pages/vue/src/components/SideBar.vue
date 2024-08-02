@@ -131,6 +131,7 @@ onMounted(() => {
 	min-width: 28rem;
 	height: calc(100% - 60px);
 	padding: 2.4rem 0;
+	padding-bottom: 8rem;
 	border-right: 1px solid #eaeaea;
 	background-color: #fff;
 	z-index: 1;

@@ -6,7 +6,8 @@
 			오늘은 promise, async / await, api 를 공부 해봤다. 오늘만 한건 아니고 어제부터 promise랑 async쪽은 살짝 봤고, 오늘 다시 봤지만 완전히 이해는 못한 상태다.
 			왜 비동기를 써서 비동기 에서 동기 처럼 작동하게 하는지 모르겠지만 일단 api 호출할땐 비동기 처리를 하고 promise 개념을 알아야하고 async랑 await를
 			쓴다는거.<br />
-			일단 여기서 내 지능으로 이론적으로 더 공부를 해봤자 효과가 미미할것 같은 기분이다.</ContentItem
+			일단 여기서 내 지능으로 이론적으로 더 공부를 해봤자 효과가 미미할것 같은 기분이다. <br />그래서 일단 여기까지만 하고 샘플 만들어보거나 다른걸
+			해야봐야겠다.</ContentItem
 		>
 		<ContentItem date="2024년 07월 31일"> javascript - 동기 / 비동기, Callback 업로드</ContentItem>
 		<ContentItem date="2024년 07월 31일">
