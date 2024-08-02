@@ -2,6 +2,12 @@
 	<div>
 		<h4 class="contents__title">History</h4>
 		<ContentItem date="2024년 08월 01일"> javascript - Promise, Async / Await, Api 업로드</ContentItem>
+		<ContentItem date="2024년 08월 01일">
+			오늘은 promise, async / await, api 를 공부 해봤다. 오늘만 한건 아니고 어제부터 promise랑 async쪽은 살짝 봤고, 오늘 다시 봤지만 완전히 이해는 못한 상태다.
+			왜 비동기를 써서 비동기 에서 동기 처럼 작동하게 하는지 모르겠지만 일단 api 호출할땐 비동기 처리를 하고 promise 개념을 알아야하고 async랑 await를
+			쓴다는거.<br />
+			일단 여기서 내 지능으로 이론적으로 더 공부를 해봤자 효과가 미미할것 같은 기분이다.</ContentItem
+		>
 		<ContentItem date="2024년 07월 31일"> javascript - 동기 / 비동기, Callback 업로드</ContentItem>
 		<ContentItem date="2024년 07월 31일">
 			7월29일에 블로그 페이지 뼈대 만들고 30일에 너무 허전해보여서 tools랑 뭐 몇가지 추가 했다. 그리고 이건 그냥.. 잡담? <br /><br />

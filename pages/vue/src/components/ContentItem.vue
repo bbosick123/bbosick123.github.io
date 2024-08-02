@@ -29,6 +29,7 @@ export default {
 		box-shadow: 1px 1px 1px 1px #eee;
 		background-color: #fff;
 		color: #666;
+		word-break: break-all;
 		& + .contents__item {
 			margin-top: 2.4rem;
 		}

@@ -3,7 +3,7 @@
 		<h4 class="contents__title">Api 호출</h4>
 		<ContentItem date="2024년 08월 01일">
 			특정 서버에 데이터를 요청하고 받아보겠다.<br />
-			더미데이터를 제공하는 https://jsonplaceholder.typicode.com에서 가져왔다.<br /><br />
+			더미데이터를 제공하는 https://jsonplaceholder.typicode.com 에서 가져왔다.<br /><br />
 			<div
 				class="colorscripter-code"
 				style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto"
