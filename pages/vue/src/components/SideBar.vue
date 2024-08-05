@@ -190,6 +190,9 @@ onMounted(() => {
 					a {
 						padding: 1rem 2rem 1rem 2.8rem;
 						font-weight: 500;
+						&:hover {
+							color: #5cd2b9;
+						}
 					}
 				}
 			}

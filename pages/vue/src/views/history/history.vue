@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<h4 class="contents__title">History</h4>
+		<ContentItem date="2024년 08월 05일"> javascript sample - Board List 업로드, 사이드바 호버 -> 색 변경 css 수정 </ContentItem>
 		<ContentItem date="2024년 08월 01일"> javascript - Promise, Async / Await, Api 업로드</ContentItem>
 		<ContentItem date="2024년 08월 01일">
 			오늘은 promise, async / await, api 를 공부 해봤다. 오늘만 한건 아니고 어제부터 promise랑 async쪽은 살짝 봤고, 오늘 다시 봤지만 완전히 이해는 못한 상태다.
