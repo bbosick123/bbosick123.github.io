@@ -55,6 +55,14 @@ const items = ref([
 		],
 	},
 	{
+		title: "Javascript Sample",
+		open: open,
+		subitems: [
+			{ label: "Board List", link: "/javascriptsample/board" },
+			{ label: "Pagination", link: "/javascriptsample/pagination" },
+		],
+	},
+	{
 		title: "VUE",
 		open: open,
 		subitems: [
@@ -81,6 +89,8 @@ const items = ref([
 		subitems: [
 			{ label: "Horizontal ScrollPage", link: "/sample/HorizontalScroll" },
 			{ label: "Circle Progress", link: "/sample/CircleProgress" },
+			{ label: "Board List", link: "/sample/SampleTable" },
+			{ label: "Pagination", link: "/sample/Pagination" },
 		],
 	},
 ]);
@@ -100,7 +110,7 @@ watch(route, (newRoute) => {
 });
 
 const enter = (el) => {
-	el.style.marginTop = "2rem";
+	el.style.marginTop = "1rem";
 	el.style.height = el.scrollHeight + "px";
 	el.style.opacity = "1";
 };
@@ -138,12 +148,12 @@ onMounted(() => {
 	&__title-depth1 {
 		> li {
 			position: relative;
-			cursor: pointer;
 			overflow: hidden;
 			h3 {
 				position: relative;
 				padding: 0 2rem;
 				font-size: 2rem;
+				cursor: pointer;
 			}
 
 			i {
@@ -178,11 +188,8 @@ onMounted(() => {
 				transition: all 0.5s ease;
 				li {
 					a {
-						padding: 0 2rem 0 2.8rem;
+						padding: 1rem 2rem 1rem 2.8rem;
 						font-weight: 500;
-					}
-					& + li {
-						margin-top: 2rem;
 					}
 				}
 			}

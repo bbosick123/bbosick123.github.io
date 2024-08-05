@@ -42,6 +42,7 @@ export default {
 		margin-bottom: 2rem;
 		border-bottom: 1px solid #eee;
 		padding-bottom: 1.2rem;
+		font-size: 1.6rem;
 	}
 }
 </style>

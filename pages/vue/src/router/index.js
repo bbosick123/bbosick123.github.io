@@ -13,6 +13,8 @@ import JavascriptCallback from "@/views/javascript/callback.vue";
 import JavascriptPromise from "@/views/javascript/promise.vue";
 import JavascriptAsyncAwait from "@/views/javascript/asyncawait.vue";
 import JavascriptApi from "@/views/javascript/api.vue";
+import JavascriptSampleBoard from "@/views/javascriptsample/board.vue";
+import JavascriptSamplePagination from "@/views/javascriptsample/pagination.vue";
 
 import Vue404 from "@/views/vue/404.vue";
 import VueVitePluginPage from "@/views/vue/VitePluginPage.vue";
@@ -24,6 +26,8 @@ import ToolsCodeSnippet from "@/views/tools/codesnippet.vue";
 
 import HorizontalScroll from "@/views/sample/HorizontalScroll.vue";
 import CircleProgress from "@/views/sample/CircleProgress.vue";
+import SampleTable from "@/views/sample/SampleTable.vue";
+import SamplePagination from "@/views/sample/Pagination.vue";
 
 import History from "@/views/history/history.vue";
 
@@ -80,6 +84,16 @@ const router = createRouter({
 					meta: { title: "javascript - Api" },
 				},
 				{
+					path: "javascriptsample/board",
+					component: JavascriptSampleBoard,
+					meta: { title: "javascript sample - board" },
+				},
+				{
+					path: "javascriptsample/pagination",
+					component: JavascriptSamplePagination,
+					meta: { title: "javascript sample - pagination" },
+				},
+				{
 					path: "vue/404",
 					component: Vue404,
 					meta: { title: "vue - 404" },
@@ -119,6 +133,16 @@ const router = createRouter({
 					path: "CircleProgress",
 					component: CircleProgress,
 					meta: { title: "sample - CircleProgress" },
+				},
+				{
+					path: "SampleTable",
+					component: SampleTable,
+					meta: { title: "sample - Board List" },
+				},
+				{
+					path: "Pagination",
+					component: SamplePagination,
+					meta: { title: "sample - pagination" },
 				},
 			],
 		},
