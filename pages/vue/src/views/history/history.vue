@@ -1,6 +1,16 @@
 <template>
 	<div>
 		<h4 class="contents__title">History</h4>
+		<ContentItem date="2024년 08월 06일"> javascript - pagination, javascriptsample - pagination 업로드 </ContentItem>
+		<ContentItem date="2024년 08월 06일">
+			오늘은 페이지네이션을 한번 분석 해봤다. 내가 만든건 아니니 분석 이라고 하겠다. 챗GPT가 만들었고 나는 코드를 보며 아 이렇구나~~ 하며 해석을 한번 해봤다.
+			어떤 원리인지는 알아야할 것 같아서 다 적어봤지만 실전에서는 원리 생각하며 쓰진 않을것 같다. 바로 컨트롤 + C,V 만 누를듯. <br /><br />근데 포스팅
+			하다보니까 좀.. 거슬리는게 있다. 테이블이랑 페이지네이션 API를 불러오는데 약간의 시간이 걸린다. 그래서 딱 페이지에 들어가면 데이터를 불러오지 않는
+			pagination안에 이전, 다음 버튼, 테이블에 thead 부분만 보이고, 로딩후 테이블 전체와 페이지네이션 숫자들이 나오는거다. <br /><br />
+			그래서 다음 포스팅은 api 호출중에는 loading 화면을 불러오고, 호출이 완료된 후 실 화면을 보여주는걸 포스팅 하겠다. 검색해보니 엄청 간단했다. 이것도 콜백
+			개념인것 같은데.. 일단 오늘은 여기까지 할까 한다. 지금 회사에 에어컨이 나오는건지 안나오는건지 너무 너무너무 너어어어무 너무 너무 덥다. 정신이
+			나가버릴것만 같다.
+		</ContentItem>
 		<ContentItem date="2024년 08월 05일"> javascript sample - Board List 업로드, 사이드바 호버 -> 색 변경 css 수정 </ContentItem>
 		<ContentItem date="2024년 08월 01일"> javascript - Promise, Async / Await, Api 업로드</ContentItem>
 		<ContentItem date="2024년 08월 01일">

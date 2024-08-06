@@ -59,9 +59,11 @@ export default {
 
 <style lang="scss" scoped>
 .wrap {
-	margin-top: 60px;
+	margin: 60px auto 0;
 	padding: 40px;
 	font-size: 1.6rem;
+	overflow-x: auto;
+	max-width: 100%;
 }
 .text-left {
 	text-align: left;

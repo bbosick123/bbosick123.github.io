@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<h4 class="contents__title">게시판</h4>
 		<div class="wrap">
 			<table>
 				<thead>
@@ -29,13 +28,13 @@
 
 <script>
 export default {
-	name: "SampleTable",
+	name: "SamplePagination",
 	data() {
 		return {
 			table: [],
 			currentPage: 1,
-			itemsPerPage: 10,
-			pagesPerGroup: 5,
+			itemsPerPage: 5,
+			pagesPerGroup: 10,
 		};
 	},
 	computed: {
@@ -65,6 +64,11 @@ export default {
 	},
 	async mounted() {
 		await this.fetchUserData();
+		this.updatePagesPerGroup();
+		window.addEventListener("resize", this.updatePagesPerGroup);
+	},
+	beforeDestroy() {
+		window.removeEventListener("resize", this.updatePagesPerGroup);
 	},
 	methods: {
 		async fetchUserData() {
@@ -76,7 +80,7 @@ export default {
 				}
 
 				const data = await response.json();
-				this.table = data; // 전체 데이터를 table 배열에 할당합니다.
+				this.table = data;
 				console.log(this.table);
 			} catch (error) {
 				console.error("API 호출 중 에러 발생:", error);
@@ -95,15 +99,24 @@ export default {
 		changePage(page) {
 			this.currentPage = page;
 		},
+		updatePagesPerGroup() {
+			if (window.innerWidth <= 784) {
+				this.pagesPerGroup = 5;
+			} else {
+				this.pagesPerGroup = 10;
+			}
+		},
 	},
 };
 </script>
 
 <style lang="scss" scoped>
 .wrap {
-	margin-top: 60px;
+	margin: 60px auto 0;
 	padding: 40px;
 	font-size: 1.6rem;
+	overflow-x: auto;
+	max-width: 100%;
 }
 .text-left {
 	text-align: left;
@@ -124,7 +137,7 @@ th {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 8px;
 	font-size: 20px;
 }
 .pagination button {
@@ -135,6 +148,11 @@ th {
 	height: 28px;
 	cursor: pointer;
 	line-height: 1;
+	&:hover:not(:disabled) {
+		color: #5cd2b9;
+		text-decoration: underline;
+		font-weight: 500;
+	}
 }
 .pagination button.active {
 	color: #5cd2b9;
