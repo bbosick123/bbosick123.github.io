@@ -154,6 +154,10 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+	const page = to.query.page || localStorage.getItem("currentPage");
+	if (page) {
+		localStorage.setItem("currentPage", page);
+	}
 	document.title = to.meta.title || "Default Title";
 	next();
 });
