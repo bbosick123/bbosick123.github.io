@@ -11,6 +11,14 @@
 			개념인것 같은데.. 일단 오늘은 여기까지 할까 한다. 지금 회사에 에어컨이 나오는건지 안나오는건지 너무 너무너무 너어어어무 너무 너무 덥다. 정신이
 			나가버릴것만 같다.
 		</ContentItem>
+		<ContentItem date="2024년 08월 06일">
+			더워가지고 좀 쉬려고했는데 url 입력하거나 새로고침했을때 index 페이지로 가는게 자꾸 머리속에서 맴돌았다. 그래서 챗gpt랑 계속 얘기도 해보고 구글링도 해보고
+			했다. 거기서 나온게 vuex-persistedstate 라는거다. 이걸로 url 입력이나 새로고침 해도 리다이렉트 안시키고 유지할 수 있다고 한다. 근데 이건 vuex 라는거에
+			있는 기능이고 vuex는 vue 에서 상태관리를 하는거라고 한다. <br /><br />
+			그래서 다음번엔 상태관리 라는 개념에 대해 좀 익혀봐야겠다. 아주 아주 예전에 react 프로젝트에서 모달? 그거 만들때 사수님한테 들었던거같은데.. 상태관리...?
+			그때 뭔가 서로 데이터 전달할때 나왔던 얘기 같기도 하고.. 그때는 진짜 내가 아예 쌩 초보라 이해를 아예 못하고 시키는대로만 했던것 같다. 이번에 좀더
+			알아봐야겠다. 너무 덥다.
+		</ContentItem>
 		<ContentItem date="2024년 08월 05일"> javascript sample - Board List 업로드, 사이드바 호버 -> 색 변경 css 수정 </ContentItem>
 		<ContentItem date="2024년 08월 01일"> javascript - Promise, Async / Await, Api 업로드</ContentItem>
 		<ContentItem date="2024년 08월 01일">
