@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<h4 class="contents__title">History</h4>
+		<ContentItem date="2024년 08월 07일"> vue - 상태관리 업로드 </ContentItem>
 		<ContentItem date="2024년 08월 06일"> javascript - pagination, javascriptsample - pagination 업로드 </ContentItem>
 		<ContentItem date="2024년 08월 06일">
 			오늘은 페이지네이션을 한번 분석 해봤다. 내가 만든건 아니니 분석 이라고 하겠다. 챗GPT가 만들었고 나는 코드를 보며 아 이렇구나~~ 하며 해석을 한번 해봤다.
