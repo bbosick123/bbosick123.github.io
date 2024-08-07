@@ -10,6 +10,7 @@
 		<ContentItem date="2024년 07월 30일">
 			404.html 파일 넣은 위치가 잘못된거였음.<br />
 			<img src="/images/240730_404.png" alt="" /><br />
+
 			내 폴더 구조가 저렇게 되있고 ROOT 에 있는 index.html 은 내 포트폴리오 홈페이지이고, 이 블로그는 vue 폴더에서 작업해서 build 후 blog 폴더로 옴겨서 깃에
 			푸시하는 방식임. <br /><br />
 

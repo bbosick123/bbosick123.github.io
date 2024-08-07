@@ -18,6 +18,7 @@ import JavascriptSamplePagination from "@/views/javascriptsample/pagination.vue"
 
 import Vue404 from "@/views/vue/404.vue";
 import VueVitePluginPage from "@/views/vue/VitePluginPage.vue";
+import VueState from "@/views/vue/state.vue";
 
 import SeoSearch from "@/views/seo/search.vue";
 
@@ -102,6 +103,11 @@ const router = createRouter({
 					path: "vue/VitePluginPage",
 					component: VueVitePluginPage,
 					meta: { title: "vue - vite-plugin-page" },
+				},
+				{
+					path: "vue/state",
+					component: VueState,
+					meta: { title: "vue - 상태관리" },
 				},
 				{
 					path: "seo/search",

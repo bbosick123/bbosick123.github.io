@@ -38,8 +38,20 @@
 	}
 }
 
-.text-indent {
-	padding: 0 0.4rem;
+.text {
+	&-indent {
+		padding: 0 0.4rem;
+	}
+	&-center {
+		text-align: center;
+	}
+	&-left {
+		text-align: left;
+	}
+	&-source {
+		text-align: center;
+		font-size: 1.2rem;
+	}
 }
 
 @media screen and (max-width: 784px) {
