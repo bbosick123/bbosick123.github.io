@@ -19,6 +19,7 @@ import JavascriptSamplePagination from "@/views/javascriptsample/pagination.vue"
 import Vue404 from "@/views/vue/404.vue";
 import VueVitePluginPage from "@/views/vue/VitePluginPage.vue";
 import VueState from "@/views/vue/state.vue";
+import VueVuex from "@/views/vue/vuex.vue";
 
 import SeoSearch from "@/views/seo/search.vue";
 
@@ -108,6 +109,11 @@ const router = createRouter({
 					path: "vue/state",
 					component: VueState,
 					meta: { title: "vue - 상태관리" },
+				},
+				{
+					path: "vue/vuex",
+					component: VueVuex,
+					meta: { title: "vue - vuex" },
 				},
 				{
 					path: "seo/search",
