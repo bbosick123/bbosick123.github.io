@@ -99,25 +99,6 @@
 					cellpadding="0"
 				>
 					<tr>
-						<td style="padding: 6px; border-right: 2px solid #4f4f4f">
-							<div
-								style="
-									margin: 0;
-									padding: 0;
-									word-break: normal;
-									text-align: right;
-									color: #aaa;
-									font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
-									line-height: 130%;
-								"
-							>
-								<div style="line-height: 130%">1</div>
-								<div style="line-height: 130%">2</div>
-								<div style="line-height: 130%">3</div>
-								<div style="line-height: 130%">4</div>
-								<div style="line-height: 130%">5</div>
-							</div>
-						</td>
 						<td style="padding: 6px 0; text-align: left">
 							<div
 								style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%"

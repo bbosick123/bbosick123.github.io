@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<h4 class="contents__title">History</h4>
+		<ContentItem date="2024년 08월 12일"> vue - vuex 업로드 </ContentItem>
 		<ContentItem date="2024년 08월 07일"> vue - 상태관리 업로드 </ContentItem>
 		<ContentItem date="2024년 08월 06일"> javascript - pagination, javascriptsample - pagination 업로드 </ContentItem>
 		<ContentItem date="2024년 08월 06일">

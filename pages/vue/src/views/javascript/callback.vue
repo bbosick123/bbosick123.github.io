@@ -141,34 +141,28 @@
 							<div
 								style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%"
 							>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
-									&nbsp;&nbsp;<span style="color: #ff3399">function</span>&nbsp;fetchData(callback)&nbsp;{
-								</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
+								<div style="white-space: pre; line-height: 130%">&nbsp;&nbsp;<span style="color: #ff3399">function</span>&nbsp;fetchData(callback)&nbsp;{</div>
+								<div style="white-space: pre; line-height: 130%">
 									&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4be6fa">setTimeout</span>(()&nbsp;<span style="color: #aaffaa"></span
 									><span style="color: #ff3399">=</span><span style="color: #aaffaa"></span><span style="color: #ff3399">&gt;</span>&nbsp;{
 								</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
+								<div style="white-space: pre; line-height: 130%">
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ff3399">const</span>&nbsp;data&nbsp;<span style="color: #aaffaa"></span
 									><span style="color: #ff3399">=</span>&nbsp;{&nbsp;<span style="color: #4be6fa">name</span>:&nbsp;<span style="color: #ffd500">"John"</span
 									>,&nbsp;age:&nbsp;<span style="color: #c10aff">30</span>&nbsp;};
 								</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback(data);</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
-									&nbsp;&nbsp;&nbsp;&nbsp;},&nbsp;<span style="color: #c10aff">2000</span>);
-								</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;&nbsp;}</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
-									&nbsp;&nbsp;<span style="color: #ff3399">function</span>&nbsp;processData(data)&nbsp;{
-								</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
+								<div style="white-space: pre; line-height: 130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback(data);</div>
+								<div style="white-space: pre; line-height: 130%">&nbsp;&nbsp;&nbsp;&nbsp;},&nbsp;<span style="color: #c10aff">2000</span>);</div>
+								<div style="white-space: pre; line-height: 130%">&nbsp;&nbsp;}</div>
+								<div style="white-space: pre; line-height: 130%">&nbsp;</div>
+								<div style="white-space: pre; line-height: 130%">&nbsp;&nbsp;<span style="color: #ff3399">function</span>&nbsp;processData(data)&nbsp;{</div>
+								<div style="white-space: pre; line-height: 130%">
 									&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4be6fa">console</span>.log(<span style="color: #ffd500">"User&nbsp;data:"</span
 									>,&nbsp;data);&nbsp;
 								</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;&nbsp;}</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;&nbsp;</div>
-								<div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;&nbsp;fetchData(processData);</div>
+								<div style="white-space: pre; line-height: 130%">&nbsp;&nbsp;}</div>
+								<div style="white-space: pre; line-height: 130%">&nbsp;&nbsp;</div>
+								<div style="white-space: pre; line-height: 130%">&nbsp;&nbsp;fetchData(processData);</div>
 							</div>
 						</td>
 						<td style="vertical-align: bottom; padding: 0 2px 4px 0">
