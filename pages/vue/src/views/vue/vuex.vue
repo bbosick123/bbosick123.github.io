@@ -246,7 +246,7 @@
 			<br />
 			부모페이지에서 가져올땐 앞에 map을 붙여서 import 하고, 스프레드연산자(...)로 불러오면 된다. <br />
 			mapState, mapGetters 는 computed에, mapMutations, mapActions는 methods에 불러와서 사용하면 끝.<br />
-			이게 기본적인 사용법이고, <strong>Modudules라는 속성이 있는데, 이건 다음에 포스팅 하겠다.</strong>
+			이게 기본적인 사용법이고, <strong>Modules라는 속성이 있는데, 이건 다음에 포스팅 하겠다.</strong>
 		</ContentItem>
 	</div>
 </template>
