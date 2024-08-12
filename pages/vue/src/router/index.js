@@ -26,6 +26,8 @@ import SeoSearch from "@/views/seo/search.vue";
 import ToolsScreenShot from "@/views/tools/screenshot.vue";
 import ToolsCodeSnippet from "@/views/tools/codesnippet.vue";
 
+import EtcDiet from "@/views/etc/diet.vue";
+
 import HorizontalScroll from "@/views/sample/HorizontalScroll.vue";
 import CircleProgress from "@/views/sample/CircleProgress.vue";
 import SampleTable from "@/views/sample/SampleTable.vue";
@@ -129,6 +131,11 @@ const router = createRouter({
 					path: "tools/codesnippet",
 					component: ToolsCodeSnippet,
 					meta: { title: "tools - codesnippet" },
+				},
+				{
+					path: "etc/diet",
+					component: EtcDiet,
+					meta: { title: "etc - diet" },
 				},
 			],
 		},

@@ -86,6 +86,11 @@ const items = ref([
 		],
 	},
 	{
+		title: "ETC",
+		open: open,
+		subitems: [{ label: "Diet", link: "/etc/diet" }],
+	},
+	{
 		title: "SAMPLE",
 		open: false,
 		subitems: [
