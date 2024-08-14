@@ -10,6 +10,57 @@
 			vue3일 경우 npm install vuex@next --save<br />
 			로 설치 하라고 한다. 본인의 vue 버전을 잘 확인해서 설치 하도록 하자. 여기선 vue3으로 사용 해보겠다.<br /><br />
 
+			먼저 main.js 에서 vuex를 불러오고 store를 등록한다.<br />
+			<div
+				class="colorscripter-code"
+				style="color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto"
+			>
+				<table
+					class="colorscripter-code-table"
+					style="margin: 0; padding: 0; border: none; background-color: #272727; border-radius: 4px"
+					cellspacing="0"
+					cellpadding="0"
+				>
+					<tr>
+						<td style="padding: 6px 0; text-align: left">
+							<div
+								style="margin: 0; padding: 0; color: #f0f0f0; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%"
+							>
+								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
+									<span style="color: #ff3399">import</span>&nbsp;{&nbsp;createApp&nbsp;}&nbsp;<span style="color: #ff3399">from</span>&nbsp;<span
+										style="color: #ffd500"
+										>'vue'</span
+									>
+								</div>
+								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
+									<span style="color: #ff3399">import</span>&nbsp;App&nbsp;<span style="color: #ff3399">from</span>&nbsp;<span style="color: #ffd500"
+										>'./App.vue'</span
+									>
+								</div>
+								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
+									<span style="color: #ff3399">import</span>&nbsp;store&nbsp;<span style="color: #ff3399">from</span>&nbsp;<span style="color: #ffd500"
+										>'./store'</span
+									>&nbsp;
+								</div>
+								<div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;</div>
+								<div style="padding: 0 6px; white-space: pre; line-height: 130%">
+									<span style="color: #ff3399">const</span>&nbsp;app&nbsp;<span style="color: #aaffaa"></span
+									><span style="color: #ff3399">=</span>&nbsp;createApp(App)
+								</div>
+								<div style="padding: 0 6px; white-space: pre; line-height: 130%">&nbsp;</div>
+								<div style="padding: 0 6px; white-space: pre; line-height: 130%">app.use(store)&nbsp;&nbsp;</div>
+								<div style="padding: 0 6px; white-space: pre; line-height: 130%">app.mount(<span style="color: #ffd500">'#app'</span>)</div>
+							</div>
+						</td>
+						<td style="vertical-align: bottom; padding: 0 2px 4px 0">
+							<a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration: none; color: white"
+								><span style="font-size: 9px; word-break: normal; background-color: #4f4f4f; color: white; border-radius: 10px; padding: 1px">cs</span></a
+							>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<br />
 			설치후 store 폴더를 만들어주고 index.js 파일을 생성한다.<br />
 			<img src="/images/240809_vue.png" alt="" /><br /><br /><br />
 
