@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import store from "@/store/index";
 
 import DefaultLayout from "@/layouts/defaultLayout.vue";
 import SampleLayout from "@/layouts/sampleLayout.vue";
@@ -173,8 +174,14 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+	store.commit("setCurrentRoute", to.path); // 현재 경로를 store에 저장
 	document.title = to.meta.title || "Default Title";
 	next();
 });
 
+// 새로고침 시 저장된 경로로 이동
+const savedRoute = store.state.currentRoute;
+if (savedRoute && savedRoute !== "/") {
+	router.replace(savedRoute);
+}
 export default router;

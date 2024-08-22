@@ -1,9 +1,9 @@
-import "./assets/style.scss";
-
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import store from "./store"; // Vuex 스토어 임포트
+import store from "./store";
+
+import "./assets/style.scss";
 
 const app = createApp(App);
 
