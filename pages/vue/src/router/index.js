@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+
 import store from "@/store/index";
 
 import DefaultLayout from "@/layouts/defaultLayout.vue";
@@ -101,7 +102,7 @@ const router = createRouter({
 				{
 					path: "vue/404",
 					component: Vue404,
-					meta: { title: "vue - 404" },
+					meta: { title: "vue - 새로고침" },
 				},
 				{
 					path: "vue/VitePluginPage",

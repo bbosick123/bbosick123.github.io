@@ -66,7 +66,7 @@ const items = ref([
 		title: "VUE",
 		open: open,
 		subitems: [
-			{ label: "404error", link: "/vue/404" },
+			{ label: "새로고침", link: "/vue/404" },
 			{ label: "vite-plugin-page", link: "/vue/VitePluginPage" },
 			{ label: "상태관리", link: "/vue/state" },
 			{ label: "Vuex", link: "/vue/vuex" },

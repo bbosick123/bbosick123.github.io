@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h4 class="contents__title">404error</h4>
+		<h4 class="contents__title">새로고침</h4>
 		<ContentItem date="2024년 07월 29일">
 			VUE로 만든 페이지에서 사용자가 새로고침이나 url을 직접 입력해서 접속할때 페이지 연결이 안되는 현상이 있음. <br /><br />
 			SPA 페이지들에 공통적으로 일어난다고 하고, 검색해보니 쉽게 해결방법을 찾을 수 있었음. <br /><br />
