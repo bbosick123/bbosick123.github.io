@@ -268,6 +268,7 @@ time {
 .study {
   font-size: 1.6rem;
   color: #333;
+  line-height: 1.6;
 }
 .study .main {
   display: flex;
@@ -279,6 +280,7 @@ time {
   width: calc(100% - 28rem);
   margin-left: 28rem;
   padding: 2.4rem;
+  padding-bottom: 8rem;
 }
 .study .contents__title {
   width: 80rem;
@@ -288,11 +290,39 @@ time {
   font-weight: 700;
   margin-bottom: 2.8rem;
 }
+.study .contents img {
+  max-width: 100%;
+}
+.study .contents a {
+  color: #5cd2b9;
+  text-decoration: underline;
+}
+.study .contents strong {
+  color: #333;
+}
+
+.text-indent {
+  padding: 0 0.4rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-source {
+  text-align: center;
+  font-size: 1.2rem;
+}
 
 @media screen and (max-width: 784px) {
   .study .contents {
     width: 100%;
     margin-left: 0;
     padding: 1.6rem;
+    padding-bottom: 8rem;
   }
-}
+  .study .contents img {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
