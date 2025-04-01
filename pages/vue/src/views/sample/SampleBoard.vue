@@ -1,5 +1,11 @@
 <template>
 	<div class="history">
+	<div class="history-write">
+		<h4 class="contents__title">글쓰기 테스트</h4>
+		<input v-model="newPostDate" placeholder="날짜 입력 (예: 2025.03.31)" />
+		<textarea v-model="newPostContent" placeholder="내용 입력"></textarea>
+		<button @click="addPost">글쓰기</button>
+	</div>
 	<!-- 글 목록 출력 -->
 	<ContentItem
 		v-for="(post, idx) in posts"
@@ -20,9 +26,9 @@
 		components: { ContentItem },
 		data() {
 			return {
-			posts: [...historyData],
-			newPostDate: "",
-			newPostContent: "",
+				posts: [...historyData],
+				newPostDate: "",
+				newPostContent: "",
 			};
 		},
 		methods: {
@@ -43,38 +49,64 @@
   
 <style lang="scss" scoped>
   .history {
-	margin-top: 100px;
+	margin-top: 10rem;
+	margin-left: 2rem;
 	.contents__item {
 		font-size: 1.6rem;
 	}
   }
-  .write-form {
-	margin-bottom: 2rem;
-	padding: 1rem;
-	border: 1px solid #ccc;
-	border-radius: 8px;
+  .contents__item {
+	margin: 0;
   }
-  .write-form input,
-  .write-form textarea {
-	display: block;
-	width: 100%;
-	margin-bottom: 0.5rem;
-	padding: 0.5rem;
-	font-size: 1rem;
-	border: 1px solid #ddd;
-	border-radius: 4px;
-  }
-  .write-form button {
-	padding: 0.5rem 1rem;
-	font-size: 1rem;
-	background-color: #007bff;
-	color: #fff;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-  }
-  .write-form button:hover {
-	background-color: #0056b3;
-  }
+
+
+  .history-write {
+	.contents__title {
+		margin-bottom: 1.6rem;
+		font-size: 2rem;
+		font-weight: 700;
+		margin-bottom: 1.6rem;
+		color: #333;
+	}
+	width: 80rem;
+	max-width: 100%;
+	margin-bottom: 5rem;
+	padding: 2rem;
+	border-radius: 0.8rem;
+	border: 0.1rem solid #eee;
+	box-shadow: 1px 1px 1px 1px #eee;
+	background-color: #fff;
+	color: #666;
+	word-break: break-all;
+	input {
+		width: 100%;
+		height: 4rem;
+		margin-bottom: 1.6rem;
+		padding: 0 0.8rem;
+		border: 0.1rem solid #eee;;
+		border-radius: 0.4rem;
+		font-family: "Noto Sans KR", sans-serif;
+		font-size: 1.4rem;
+	}
+	textarea {
+		width: 100%;
+		height: 12rem;
+		padding: 0.8rem;
+		border: 0.1rem solid #eee;;
+		border-radius: 0.4rem;
+		font-family: "Noto Sans KR", sans-serif;
+		font-size: 1.4rem;
+	}
+	button {
+		margin-top: 2rem;
+		width: 16rem;
+		height: 3.6rem;
+		border-radius: 0.4rem;
+		background-color: #5cd2b9;
+		color: #fff;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+}
 </style>
   
