@@ -165,6 +165,11 @@ const router = createRouter({
 					component: SamplePagination,
 					meta: { title: "sample - pagination" },
 				},
+				{
+					path: "History",
+					component: SampleHistory,
+					meta: { title: "sample - history" },
+				},
 			],
 		},
 	],
