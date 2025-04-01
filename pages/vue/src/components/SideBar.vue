@@ -98,6 +98,7 @@ const items = ref([
 			{ label: "Circle Progress", link: "/sample/CircleProgress" },
 			{ label: "Board List", link: "/sample/SampleTable" },
 			{ label: "Pagination", link: "/sample/Pagination" },
+			{ label: "Board", link: "/sample/SampleBoard" },
 		],
 	},
 ]);

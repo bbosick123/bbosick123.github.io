@@ -34,6 +34,7 @@ import HorizontalScroll from "@/views/sample/HorizontalScroll.vue";
 import CircleProgress from "@/views/sample/CircleProgress.vue";
 import SampleTable from "@/views/sample/SampleTable.vue";
 import SamplePagination from "@/views/sample/Pagination.vue";
+import SampleBoard from "@/views/sample/SampleBoard.vue";
 
 import History from "@/views/history/history.vue";
 
@@ -166,9 +167,9 @@ const router = createRouter({
 					meta: { title: "sample - pagination" },
 				},
 				{
-					path: "History",
-					component: SampleHistory,
-					meta: { title: "sample - history" },
+					path: "SampleBoard",
+					component: SampleBoard,
+					meta: { title: "sample - Board" },
 				},
 			],
 		},
