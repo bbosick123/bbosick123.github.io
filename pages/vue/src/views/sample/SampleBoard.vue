@@ -61,13 +61,6 @@
 
 
   .history-write {
-	.contents__title {
-		margin-bottom: 1.6rem;
-		font-size: 2rem;
-		font-weight: 700;
-		margin-bottom: 1.6rem;
-		color: #333;
-	}
 	width: 80rem;
 	max-width: 100%;
 	margin-bottom: 5rem;
@@ -78,6 +71,13 @@
 	background-color: #fff;
 	color: #666;
 	word-break: break-all;
+	.contents__title {
+		margin-bottom: 1.6rem;
+		font-size: 2rem;
+		font-weight: 700;
+		margin-bottom: 1.6rem;
+		color: #333;
+	}
 	input {
 		width: 100%;
 		height: 4rem;
