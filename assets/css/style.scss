@@ -260,6 +260,7 @@ html {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			padding-bottom: 200px;
 			@include tablet {
 				padding-top: 8.2rem;
 				padding-bottom: 8.2rem;

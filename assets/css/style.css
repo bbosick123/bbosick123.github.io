@@ -560,6 +560,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 200px;
 }
 @media (max-width: 1024px) {
   .lys-main .lys-inner {

@@ -13,8 +13,6 @@
 		:date="post.date"
 	>
 		<div class="contents__item" v-html="post.content" />
-		<button @click="startEdit(post)">수정</button>
-   	 	<button @click="deletePost(post.id)">삭제</button>
 	</ContentItem>
 	</div>
 </template>
@@ -31,39 +29,19 @@
 				posts: [...historyData],
 				newPostDate: "",
 				newPostContent: "",
-				editingId: null, 
 			};
 		},
 		methods: {
 			addPost() {
 			if (!this.newPostDate || !this.newPostContent) return;
 
-			if (this.editingId !== null) {
-				const index = this.posts.findIndex(post => post.id === this.editingId);
-				if (index !== -1) {
-				this.posts[index].date = this.newPostDate;
-				this.posts[index].content = this.newPostContent.replace(/\n/g, "<br />");
-				}
-				this.editingId = null;
-			} else {
-				this.posts.unshift({
-				id: Date.now(),
+			this.posts.unshift({
 				date: this.newPostDate,
 				content: this.newPostContent.replace(/\n/g, "<br />"),
-				});
-			}
+			});
 
 			this.newPostDate = "";
 			this.newPostContent = "";
-			},
-			deletePost(id) {
-				this.posts = this.posts.filter(post => post.id !== id);
-				this.editingId = null;
-			},
-			startEdit(post) {
-				this.newPostDate = post.date;
-				this.newPostContent = post.content.replace(/<br\s*\/>/g, "\n");
-				this.editingId = post.id;
 			},
 		},
 	};
@@ -80,19 +58,7 @@
   .contents__item {
 	margin: 0;
   }
-  button {
-	margin-top: 2rem;
-	width: 16rem;
-	height: 3.6rem;
-	border-radius: 0.4rem;
-	background-color: #5cd2b9;
-	color: #fff;
-	font-size: 1.6rem;
-	font-weight: 600;
-	& + & {
-		margin-left: 10px;
-	}
-}
+
 
   .history-write {
 	width: 80rem;
@@ -131,7 +97,16 @@
 		font-family: "Noto Sans KR", sans-serif;
 		font-size: 1.4rem;
 	}
+	button {
+		margin-top: 2rem;
+		width: 16rem;
+		height: 3.6rem;
+		border-radius: 0.4rem;
+		background-color: #5cd2b9;
+		color: #fff;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
 }
-
 </style>
   
