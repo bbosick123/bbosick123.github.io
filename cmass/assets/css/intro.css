@@ -708,7 +708,6 @@ body, html {
 }
 
 .intro {
-  z-index: 2;
   position: relative;
   min-height: 100vh;
   height: 100%;
@@ -757,6 +756,7 @@ body, html {
   width: 100%;
   height: 23.6rem;
   pointer-events: all;
+  z-index: 2;
 }
 @media (min-width: 1366px) and (max-width: 1675px) {
   .intro-text_wrap {

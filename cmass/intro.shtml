@@ -496,7 +496,7 @@
       gsap.globalTimeline.clear();
       document.querySelector(".intro").classList.add("skip");
       document.querySelector(".intro--bg").classList.add("skip");
-      
+      document.querySelector(".skip-btn").classList.add("skip");
     });
 
   function bindCardHover(card, opts1, opts2, opts3) {
