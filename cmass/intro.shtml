@@ -160,7 +160,7 @@
         </div>
       </div>
 
-      <!-- <div class="intro-card">
+      <div class="intro-card">
         <ul>
           <li>
             <a href="./main_list.shtml?grade=elem" class="card card01">
@@ -227,7 +227,7 @@
             </a>
           </li>
         </ul>
-      </div> -->
+      </div>
 
     </div>
   </div>
@@ -419,12 +419,12 @@
       withBP(({ conditions }) => {
 
         const { isLarge, isMedium, isSmall, isMobile } = conditions;
-        const h = isLarge ? "542px" : isMedium ? "400px" : isSmall ? "710px" : isMobile ? "616px" : "inherit";
+        const h = isLarge ? 542 : isMedium ? 400 : isSmall ? 710 : isMobile ? 616 : "inherit";
         const fs = isLarge ? "48px" : isMedium ? "40px" : isSmall ? "32px" : isMobile ? "22px" : "inherit";
         const texth = isLarge ? "54px" : isMedium ? "48px" : isSmall ?  "38px" : isMobile ? "22px": "inherit";
         const pd = isLarge ? "18px" : isMedium ? "14px" : isSmall ? "12px" : isMobile ? "4px" : "inherit";
         tl
-        tl.to(".intro-card", { height: h, opacity: "1", overflow: "visible" }, "+=0.8")
+          .to(".intro-text_wrap", { y: -h / 2, force3D: true })
           .to(".intro--bg", { background: "none" }, "<")
           .to(".intro-text04 span", { fontWeight: 600, fontSize: fs, color: "#3E29BB" }, "<")
           .to(".intro-text_badge", { background: "linear-gradient(90deg, #4B80FF 20%, #674FFC 100%)" }, "<")
@@ -439,7 +439,6 @@
 
           if (conditions.isMobile) {
             tl
-              tl
               .to(".intro-text_wrap", { height: "115px", minHeight: "115px", marginBottom: "30px", paddingTop: "20px" }, "<")
               .to(".intro-text_badge", {
                 width: "100%",
