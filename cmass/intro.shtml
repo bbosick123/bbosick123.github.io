@@ -428,7 +428,7 @@
         const pd = isLarge ? "18px" : isMedium ? "14px" : isSmall ? "12px" : isMobile ? "4px" : "inherit";
         tl
         tl.to(".intro-card", { height: h, opacity: "1", overflow: "visible" }, "+=0.8")
-          .to(".intro--bg", { background: "none" }, "<")
+          // .to(".intro--bg", { background: "none" }, "<")
           .to(".intro-text04 span", { fontWeight: 600, fontSize: fs, color: "#3E29BB" }, "<")
           .to(".intro-text_badge", { background: "linear-gradient(90deg, #4B80FF 20%, #674FFC 100%)" }, "<")
           .to(".intro-text--split01 img", { filter: "brightness(0) invert(1)", height: texth }, "<")
