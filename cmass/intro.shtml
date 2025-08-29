@@ -90,10 +90,10 @@
       <div class="intro-shape intro-shape03"></div>
     </div>
   </div>
-   <button class="skip-btn">
-        SKIP
-        <img src="./assets/images/intro/ic-skip.png" alt="">
-    </button>
+  <button class="skip-btn">
+    SKIP
+    <img src="./assets/images/intro/ic-skip.png" alt="">
+  </button>
   <div class="cmass">
     <div class="intro">
       <div class="intro-text_wrap">
@@ -459,7 +459,7 @@
           .to(".intro-text--split02", { paddingLeft: pd }, "<")
           
           if (conditions.isSmall) {
-            tl.to(".intro-text_wrap", { transform: "translateY(0)", height: "150px" }, "<")
+            tl.to(".intro-text_wrap", {height: "150px" }, "<")
           }
 
           if (conditions.isMobile) {

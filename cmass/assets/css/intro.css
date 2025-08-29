@@ -1977,13 +1977,10 @@ font {
 }
 @media (max-width: 630px) {
   .intro.skip .intro-card {
+    width: 100%;
     height: calc(100% - 145px);
     margin-top: 0rem;
   }
-}
-.intro.skip .skip-btn {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .skip-btn {
@@ -2043,6 +2040,10 @@ font {
   height: 100%;
   background-color: #fff;
   opacity: 0.3;
+}
+.skip-btn.skip {
+  opacity: 0;
+  pointer-events: none;
 }
 
 br.tabletI {
