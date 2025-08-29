@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/intro.css" />
+  
+  <!-- 필요한 오버라이드만 인라인으로 추가 -->
+  <meta name="title" content="씨마스 교과서 전시관">
+  <meta name="description" content="2022 개정 교육과정 씨마스 교과서를 소개합니다."/>
+  <meta name="thumbnail" content="./assets/images/thumbnail.png"/>
+
+  <meta property="og:url" content="https://viewer.cmass.kr/html/textbook/intro.shtml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="씨마스 교과서 전시관">
+  <meta property="og:description" content="2022 개정 교육과정 씨마스 교과서를 소개합니다."/>
+  <meta property="og:image" content="./assets/images/thumbnail.png"/>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-71SETRBQSV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-71SETRBQSV');
+  </script>
+  
+  <title>씨마스 교과서 전시관</title>
+</head>
+
+<body>
+  <div class="intro--bg">
+    <div class="intro--bg-item">
+      <img src="./assets/images/intro/intro-bg_item.png" alt="">
+    </div>
+    <div class="intro-obj">
+      <div class="step01">
+        <div class="step01-img step01-img01">
+          <img src="./assets/images/intro/step01-img01.png" alt="">
+        </div>
+        <div class="step01-img step01-img02">
+          <img src="./assets/images/intro/step01-img02.png" alt="">
+        </div>
+        <div class="step01-img step01-img03">
+          <img src="./assets/images/intro/step01-img03.png" alt="">
+        </div>
+        <div class="step01-img step01-img04">
+          <img src="./assets/images/intro/step01-img04.png" alt="">
+        </div>
+      </div>
+
+      <div class="step02">
+        <div class="step02-img step02-img01">
+          <img src="./assets/images/intro/step02-img01.png" alt="">
+          <img src="./assets/images/intro/step02-img01_mo.png" alt="">
+        </div>
+        <div class="step02-img step02-img02">
+          <img src="./assets/images/intro/step02-img02.png" alt="">
+          <img src="./assets/images/intro/step02-img02_mo.png" alt="">
+        </div>
+        <div class="step02-img step02-img03">
+          <img src="./assets/images/intro/step02-img03.png" alt="">
+          <img src="./assets/images/intro/step02-img03_mo.png" alt="">
+        </div>
+        <div class="step02-img step02-img04">
+          <img src="./assets/images/intro/step02-img04.png" alt="">
+          <img src="./assets/images/intro/step02-img04_mo.png" alt="">
+        </div>
+      </div>
+
+      <div class="step03">
+        <div class="step03-img step03-img01">
+          <img src="./assets/images/intro/step03-img01.png" alt="">
+        </div>
+        <div class="step03-img step03-img02">
+          <img src="./assets/images/intro/step03-img02.png" alt="">
+        </div>
+        <div class="step03-img step03-img03">
+          <img src="./assets/images/intro/step03-img03.png" alt="">
+        </div>
+        <div class="step03-img step03-img04">
+          <img src="./assets/images/intro/step03-img04.png" alt="">
+        </div>
+      </div>
+
+      <div class="intro-shape intro-shape01"></div>
+      <div class="intro-shape intro-shape02"></div>
+      <div class="intro-shape intro-shape03"></div>
+    </div>
+  </div>
+  <div class="cmass">
+    <div class="intro">
+      <button class="skip-btn">
+        SKIP
+        <img src="./assets/images/intro/ic-skip.png" alt="">
+      </button>
+
+      
+
+      <div class="intro-text_wrap">
+        <div class="intro-text intro-text01">
+          처음 가르치는<br class="tabletI"> 과목도 당당하게,<br>
+          <strong>선생님의
+            <span class="text-drag text-drag01">
+              <span class="text-drag_bg">
+                <span class="text-drag_bg-item text-drag_bg-item01"></span>
+                <span class="text-drag_bg-item text-drag_bg-item02"></span>
+                <span class="text-drag_bg-item text-drag_bg-item03"></span>
+                <span class="text-drag_bg-item text-drag_bg-item04"></span>
+              </span>
+              <span class="text-drag_label">소중한 시간<span class="pc">을</span></span><span class="text-drag_mouse"></span></span><span class="tabletI">을</span>
+            <br class="tabletI">지켜 드립니다.
+          </strong>
+        </div>
+
+        <div class="intro-text intro-text02">
+          복잡한 지식도<br class="tabletI"> 명쾌하게,<br>
+          <strong>
+            선생님의<br class="tabletI">
+            <span class="text-drag text-drag02">
+              <span class="text-drag_bg">
+                <span class="text-drag_bg-item text-drag_bg-item01"></span>
+                <span class="text-drag_bg-item text-drag_bg-item02"></span>
+                <span class="text-drag_bg-item text-drag_bg-item03"></span>
+                <span class="text-drag_bg-item text-drag_bg-item04"></span>
+              </span>
+              <span class="text-drag_label">전문성에 자신감<span class="pc">을</span></span><span class="text-drag_mouse"></span></span><span class="tabletI">을</span>
+            </span><br class="tabletI"> 더합니다.
+          </strong>
+        </div>
+
+        <div class="intro-text intro-text03">
+          고교학점제,<br class="tabletI"> 학교자율시간의 고민,<br>
+          <strong>
+            전문 선택과목은<br class="tabletI">
+            <span class="text-drag text-drag03">
+              <span class="text-drag_bg">
+                <span class="text-drag_bg-item text-drag_bg-item01"></span>
+                <span class="text-drag_bg-item text-drag_bg-item02"></span>
+                <span class="text-drag_bg-item text-drag_bg-item03"></span>
+                <span class="text-drag_bg-item text-drag_bg-item04"></span>
+              </span>
+              <span class="text-drag_label">씨마스 교과서</span><span class="text-drag_mouse"></span></span><!-- -->로 해결하세요
+            </span>
+          </strong>
+        </div>
+
+        <div class="intro-text intro-text04">
+          <span>2022<br class="moI"> 개정 교육과정</span>
+          <div class="intro-text_badge">
+            <strong>
+              <span class="intro-text--split01">
+                <img src="./assets/images/intro/split-text01.png" alt="씨마스">
+                <img src="./assets/images/intro/split-text02.png" alt="교과서가">
+              </span>
+              <span class="intro-text--split02">
+                <img src="./assets/images/intro/split-text03.png" alt="함께합니다!">
+              </span>
+            </strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-card">
+        <ul>
+          <li>
+            <a href="./main_list.shtml?grade=elem" class="card card01">
+              <div class="card--bg_wrap">
+                <div class="card--bg_object card--bg_object01"></div>
+                <div class="card--bg_object card--bg_object02"></div>
+                <div class="card--bg_object card--bg_object03"></div>
+                <div class="card--bg"></div>
+              </div>
+              <div class="card-title">초등학교<br><span>교과서</span></div>
+              <p>학교자율시간<br>교과 선택을 폭넓게!</p>
+              <div class="card-btn">
+                보러가기
+                <img src="./assets/images/intro/ico_arrow.png" alt="">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./main_list.shtml?grade=mid" class="card card02">
+              <div class="card--bg_wrap">
+                <div class="card--bg_object card--bg_object01"></div>
+                <div class="card--bg_object card--bg_object02"></div>
+                <div class="card--bg_object card--bg_object03"></div>
+                <div class="card--bg"></div>
+              </div>
+              <div class="card-title">중학교<br><span>교과서</span></div>
+              <p>학생의 꿈과 미래를<br>이어 주는 자기주도 학습!</p>
+              <div class="card-btn">
+                보러가기
+                <img src="./assets/images/intro/ico_arrow.png" alt="">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./main_list.shtml?grade=high" class="card card03">
+              <div class="card--bg_wrap">
+                <div class="card--bg_object card--bg_object01"></div>
+                <div class="card--bg_object card--bg_object02"></div>
+                <div class="card--bg_object card--bg_object03"></div>
+                <div class="card--bg"></div>
+              </div>
+              <div class="card-title">고등학교<br><span>교과서</span></div>
+              <p>고교학점제 선택 과목,<br>자신감과 당당함이 넘치는 수업!</p>
+              <div class="card-btn">
+                보러가기
+                <img src="./assets/images/intro/ico_arrow.png" alt="">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="../aidt/intro/intro.shtml" class="card card04">
+              <div class="card04--bg"></div>
+              <div class="card04-badge">
+                <div class="card--bg_object card--bg_object01"></div>
+                <div class="card--bg_object card--bg_object02"></div>
+                <div class="card--bg_object card--bg_object03"></div>
+              </div>
+              <div class="card-title">정보<br><span>AI</span> 교육자료</div>
+              <p>인공지능 시대,<br>새로운 교육의 시작</p>
+              <div class="card-btn" target="_blank">
+                보러가기
+                <img src="./assets/images/intro/ico_arrow.png" alt="">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/MotionPathPlugin.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(MotionPathPlugin);
+
+    // 유틸: 특정 text-drag 그룹에 마우스 추적 트윈을 끼워 넣는 함수
+    function attachMouseFollow(tl, dragSelector, insertAtLabel) {
+      const drag = document.querySelector(dragSelector);
+      if (!drag) return tl;
+
+      const bg    = drag.querySelector(".text-drag_bg");
+      const label = drag.querySelector(".text-drag_label");
+      const mouse = drag.querySelector(".text-drag_mouse");
+
+      // 1) 이 구간 시작 직전에 크기 측정 & 초기화
+      tl.add(() => {
+        // 레이아웃 기준 px 측정
+        const W = Math.ceil(label.offsetWidth);
+        const H = Math.ceil(label.offsetHeight);
+
+        // dataset에 저장해서 아래 function-based value에서 참조
+        drag.dataset.w = W;
+        drag.dataset.h = H;
+
+        // 초기화
+        gsap.set(bg,    { width: 0, height: 0 });
+        gsap.set(mouse, { x: 0, y: 0, opacity: 1 });
+      }, insertAtLabel || "<");
+
+
+      tl.to(mouse, {
+        x: () => +drag.dataset.w,
+        y: () => +drag.dataset.h,
+        duration: 0.7,
+      }, "<"); // bg 확장과 동시 시작
+
+      return tl;
+    }
+
+    const tl = gsap.timeline();
+    const mm = gsap.matchMedia();
+    const BP = {
+      isLarge: "(min-width: 1676px)",
+      isMedium: "(min-width: 1366px) and (max-width: 1675px)",
+      isSmall: "(min-width: 630px) and (max-width: 1365px)",
+      isMobile: "(max-width: 629px)",
+    };
+    const withBP = (cb) => mm.add(BP, cb);
+
+    tl
+      .to('.intro-text01', { opacity: "1", y: "0", duration: "1" }, "+=1")
+      .to('.intro-shape01', { x: "-230", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+      .to('.intro-shape02', { left: "35%", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+      .to('.intro-shape03', { top: "30%", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+      .to(".step01-img01", { x: "0", opacity: "0.2", duration: "1" }, "<")
+      .to(".step01-img02", { y: "0", x: "0", opacity: "0.8", duration: "1" }, "<")
+      .to(".step01-img03", { x: "0", opacity: "0.6", duration: "1" }, "<")
+      .to(".step01-img04", { y: "0", x: "0", opacity: "0.8", duration: "1" }, "<")
+
+
+      // 텍스트 01: 색 변경 + bg 확장 + mouse 추적
+      .to('.text-drag01', { color: "#D32AF5", duration: "0.7" })
+      .to('.text-drag01 .text-drag_bg', {
+        width: "100%", height: "100%", opacity: "1", y: "0", duration: "0.7",
+      }, "<");
+    attachMouseFollow(tl, ".text-drag01", "<");
+    tl
+      .to(".step01-img01", {
+        motionPath: {
+          path: [{ x: 0, y: 0 }, { x: 30, y: 40 }, { x: 80, y: 80 }],
+          curviness: 1.5
+        }, duration: "1"
+      }, "<")
+      .to(".step01-img02", { y: "40", x: "-40", duration: "1" }, "<")
+      .to(".step01-img03", {
+        motionPath: {
+          path: [{ x: 0, y: 0 }, { x: -30, y: -40 }, { x: -80, y: -80 }],
+          curviness: 1.5
+        }, duration: "1"
+      }, "<")
+      .to(".step01-img04", { y: "-40", x: "40", duration: "1" }, "<")
+
+
+
+      .to('.intro-text01', { opacity: "0", y: "-95", duration: "0.3" }, "+=1.3")
+      .to(".step01-img", { opacity: "0", duration: "1" }, "<")
+      .to('.intro-text02', { opacity: "1", y: "0", duration: "0.5" }, "<")
+      .to('.intro-shape01', { x: "0", bottom: "auto", top: "-600", left: "50%", xPercent: -60, opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+      .to('.intro-shape02', { top: "100%", yPercent: "-40", left: "50%", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+      .to('.intro-shape03', { top: "100%", right: "100%", xPercent: "80", yPercent: "-60", width: "575px", height: "575px", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+      .to(".step02-img01", { y: "100", opacity: "1", duration: "1" }, "<")
+      .to(".step02-img02", { y: "100", opacity: "01", duration: "1" }, "<")
+      .to(".step02-img03", { y: "100", opacity: "1", duration: "1" }, "<")
+      .to(".step02-img04", { y: "100", opacity: "1", duration: "1" }, "<")
+
+
+
+      // 텍스트 02: 색 + bg + mouse
+      .to('.text-drag02', { color: "#D32AF5", duration: "0.7" })
+      .to('.text-drag02 .text-drag_bg', {
+        width: "100%", height: "100%", opacity: "1", y: "0", duration: "0.7"
+      }, "<");
+    attachMouseFollow(tl, ".text-drag02", "<");
+    tl
+      .to(".step02-img01", { y: "0", duration: "0.7" }, "<")
+      .to(".step02-img02", { y: "0", duration: "0.7" }, "<")
+      .to(".step02-img03", { y: "50", duration: "0.7" }, "<")
+      .to(".step02-img04", { y: "0", duration: "0.7" }, "<")
+
+
+
+      .to('.intro-text02', { opacity: "0", y: "-95", duration: "0.3" }, "+=1.3")
+      .to(".step02-img", { opacity: "0", duration: "1" }, "<")
+      .to('.intro-text03', { opacity: "1", y: "0", duration: "0.5" }, "<")
+      .to('.intro-shape01', { x: "0", top: "50%", left: "100%", xPercent: -35, yPercent: -60, width: "500", height: "500", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+      .to('.intro-shape02', { top: "100%", xPercent: "-5", yPercent: "-45", left: "0", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+      .to('.intro-shape03', { top: "0", right: "50%", xPercent: "-50", yPercent: "-55", width: "575px", height: "575px", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+      .to(".step03-img01", { top: "-10px", left: "-10px", opacity: "1", duration: "1" }, "<")
+      .to(".step03-img02", { bottom: "100px", left: "70px", opacity: "1", duration: "1" }, "<")
+      .to(".step03-img03", { top: "100px", right: "0", opacity: "1", duration: "1" }, "<")
+      .to(".step03-img04", { bottom: "-50px", right: "0", opacity: "1", duration: "1" }, "<")
+
+
+
+      // 텍스트 03: 색 + bg + mouse
+      .to('.text-drag03', { color: "#D32AF5", duration: "0.7" })
+      .to('.text-drag03 .text-drag_bg', {
+        width: "100%", height: "100%", opacity: "1", y: "0", duration: "0.7"
+      }, "<");
+    attachMouseFollow(tl, ".text-drag03", "<");
+    tl
+      .to(".step03-img01", {
+        motionPath: {
+          path: [{ x: 0, y: 0 }, { x: 40, y: -50 }, { x: 100, y: -100 }],
+          curviness: 1.5
+        }, opacity: "1", duration: "1", ease: "power3.out"
+      }, "<")
+      .to(".step03-img02", {
+        motionPath: {
+          path: [{ x: 0, y: 0 }, { x: -45, y: -55 }, { x: -100, y: -100 }],
+          curviness: 1.5
+        }, opacity: "1", duration: "1", ease: "power3.out"
+      }, "<")
+      .to(".step03-img03", {
+        motionPath: {
+          path: [{ x: 0, y: 0 }, { x: 40, y: 50 }, { x: 100, y: 100 }],
+          curviness: 1.5
+        }, opacity: "1", duration: "1", ease: "power3.out"
+      }, "<")
+      .to(".step03-img04", {
+        motionPath: {
+          path: [{ x: 0, y: 0 }, { x: -40, y: 50 }, { x: -100, y: 100 }],
+          curviness: 1.5
+        }, opacity: "1", duration: "1", ease: "power3.out"
+      }, "<")
+
+
+
+      .to('.intro-text03', { opacity: "0", y: "-95", duration: "0.3" }, "+=1.3")
+      .to(".step03-img", { opacity: "0", duration: "1" }, "<")
+      .to('.intro-text04', { opacity: "1", y: "0", duration: "0.5" }, "<")
+      .to('.intro-text04 span', { y: "0", duration: "1" }, "<")
+      // withBP(({ conditions }) => {
+
+      //   const { isLarge, isMedium, isSmall, isMobile } = conditions;
+        
+      //   if (!isMobile) {
+          
+      //   }
+      // });
+      tl
+      .to('.intro-text_badge', { width: "auto", duration: "1" }, "<")  
+      .to('.intro-text--split01 img', { y: "0", opacity: "1", duration: "0.6", ease: "power3.out", stagger: "0.8" }, "+=0.1")
+      .to(".intro-text--split02 img", { y: 0, opacity: 1, duration: 0.8 })
+
+
+
+      withBP(({ conditions }) => {
+
+        const { isLarge, isMedium, isSmall, isMobile } = conditions;
+        const h = isLarge ? "542px" : isMedium ? "400px" : isSmall ? "710px" : isMobile ? "616px" : "inherit";
+        const fs = isLarge ? "48px" : isMedium ? "40px" : isSmall ? "32px" : isMobile ? "22px" : "inherit";
+        const texth = isLarge ? "54px" : isMedium ? "48px" : isSmall ?  "38px" : isMobile ? "22px": "inherit";
+        const pd = isLarge ? "18px" : isMedium ? "14px" : isSmall ? "12px" : isMobile ? "4px" : "inherit";
+        tl
+        tl.to(".intro-card", { height: h, opacity: "1", overflow: "visible" }, "+=0.8")
+          .to(".intro--bg", { background: "none" }, "<")
+          .to(".intro-text04 span", { fontWeight: 600, fontSize: fs, color: "#3E29BB" }, "<")
+          .to(".intro-text_badge", { background: "linear-gradient(90deg, #4B80FF 20%, #674FFC 100%)" }, "<")
+          .to(".intro-text--split01 img", { filter: "brightness(0) invert(1)", height: texth }, "<")
+          .to(".intro-text--split02 img", { filter: "brightness(0) invert(1)", height: texth }, "<")
+          .to(".intro-text--split01", { gap: pd }, "<")
+          .to(".intro-text--split02", { paddingLeft: pd }, "<")
+          
+          if (conditions.isSmall) {
+            tl.to(".intro-text_wrap", { transform: "translateY(0)", height: "150px" }, "<")
+          }
+
+          if (conditions.isMobile) {
+            tl
+              tl
+              .to(".intro-text_wrap", { height: "115px", minHeight: "115px", marginBottom: "30px", paddingTop: "20px" }, "<")
+              .to(".intro-text_badge", {
+                width: "100%",
+                justifyContent: "center"
+              }, "<")
+              .to(".intro-text_badge strong", {
+                flexDirection: "row",
+              }, "<")
+              .to(".intro-text--split02", {
+                paddingTop: 0,
+              }, "<")
+              .to("br.moI", { display: "none" }, "-=1")
+          }
+
+          if (conditions.isLarge || conditions.isMedium) {
+            tl
+            .to(".intro-shape01", { bottom: "50%", left: "100%", width: "520px", height: "520px", background: "#FDFFA6", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+            .to('.intro-shape02', { top: "100%", xPercent: "0", yPercent: "-50", left: "20%", width: "630px", height: "630px", background: "#E786FF", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+            .to('.intro-shape03', { top: "0", right: "100%", xPercent: "60", yPercent: "-40", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+          }
+      });
+      
+     
+      tl.to('.skip-btn', { opacity: "0", pointerEvents: "none" });
+
+
+    // Skip 버튼: 타임라인 중지 + (원하면 .intro.skip 클래스로 즉시완료 상태 전환)
+    document.querySelector(".skip-btn").addEventListener("click", () => {
+      tl.kill();
+      gsap.globalTimeline.clear();
+      document.querySelector(".intro").classList.add("skip");
+      document.querySelector(".intro--bg").classList.add("skip");
+      
+    });
+
+  function bindCardHover(card, opts1, opts2, opts3) {
+    const obj1 = card.querySelector(".card--bg_object01");
+    const obj2 = card.querySelector(".card--bg_object02");
+    const obj3 = card.querySelector(".card--bg_object03");
+
+    const enter = () => {
+      gsap.to(obj1, opts1);
+      gsap.to(obj2, opts2);
+      gsap.to(obj3, opts3);
+    };
+    const leave = () => {
+      gsap.to([obj1, obj2, obj3], {
+        opacity: 0, x: 0, y: 0, xPercent: 0, yPercent: 0, ease: "power2.inOut"
+      });
+    };
+
+    card.addEventListener("mouseenter", enter);
+    card.addEventListener("mouseleave", leave);
+
+    // cleanup
+    return () => {
+      card.removeEventListener("mouseenter", enter);
+      card.removeEventListener("mouseleave", leave);
+    };
+  }
+
+  // ===== PC (>=1366px): 기존 값 =====
+  mm.add("(min-width: 1676px)", () => {
+    const unbinders = [];
+
+    document.querySelectorAll(".card01").forEach(card => {
+      unbinders.push(bindCardHover(
+        card,
+        { opacity: 1, x: -30, y: -30, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent: -50, yPercent: -50, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent:  50, yPercent:  50, duration: 0.5, ease: "power2.out" },
+      ));
+    });
+
+    document.querySelectorAll(".card02").forEach(card => {
+      unbinders.push(bindCardHover(
+        card,
+        { opacity: 1, x:  30, y: -30, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent: -50, yPercent: -50, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent:  50, yPercent:  50, duration: 0.5, ease: "power2.out" },
+      ));
+    });
+
+    document.querySelectorAll(".card03").forEach(card => {
+      unbinders.push(bindCardHover(
+        card,
+        { opacity: 1, x: -30, y: -30, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent: -50, yPercent: -50, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent:  50, yPercent:  50, duration: 0.5, ease: "power2.out" },
+      ));
+    });
+
+    return () => unbinders.forEach(off => off());
+  });
+
+
+  mm.add("(min-width: 1366px) and (max-width: 1675px)", () => {
+    const unbinders = [];
+
+    document.querySelectorAll(".card01").forEach(card => {
+      unbinders.push(bindCardHover(
+        card,
+        { opacity: 1, x: -30, y: -30, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent: -50, yPercent: -50, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent:  50, yPercent:  50, duration: 0.5, ease: "power2.out" },
+      ));
+    });
+
+    document.querySelectorAll(".card02").forEach(card => {
+      unbinders.push(bindCardHover(
+        card,
+        { opacity: 1, x:  30, y: -30, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent: -50, yPercent: -50, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent:  50, yPercent:  50, duration: 0.5, ease: "power2.out" },
+      ));
+    });
+
+    document.querySelectorAll(".card03").forEach(card => {
+      unbinders.push(bindCardHover(
+        card,
+        { opacity: 1, x: -30, y: -30, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent: -50, yPercent: -50, duration: 0.5, ease: "power2.out" },
+        { opacity: 1, xPercent:  50, yPercent:  50, duration: 0.5, ease: "power2.out" },
+      ));
+    });
+
+    return () => unbinders.forEach(off => off());
+  });
+
+
+    // 1) 브레이크포인트별 기준 높이 정의
+  const PROFILES = [
+    { query: "(min-width: 1676px)",                            name: "large",  baseHeight: 862, minTrigger: 780 },
+    { query: "(min-width: 1366px) and (max-width: 1675px)",    name: "medium", baseHeight: 660,  minTrigger: 720 },
+    { query: "(min-width: 630px)  and (max-width: 1365px)",    name: "small",  baseHeight: 916,  minTrigger: 680 },
+    { query: "(max-width: 629px)",                             name: "mobile", baseHeight: 765,  minTrigger: 640 },
+  ];
+
+  // 2) 현재 매칭되는 프로필 찾기
+  function getCurrentProfile() {
+    for (const p of PROFILES) {
+      if (window.matchMedia(p.query).matches) return p;
+    }
+    // 혹시 아무 것도 안맞으면 가장 작은걸 기본으로
+    return PROFILES[PROFILES.length - 1];
+  }
+
+  // 3) 스케일 적용
+  function applyResponsiveScale() {
+    const wrap = document.querySelector(".cmass");
+    if (!wrap) return;
+
+    const profile = getCurrentProfile();
+    const H = window.innerHeight;
+    const baseH = profile.baseHeight;     // 이 BP에서의 디자인 기준 높이
+    const trigger = profile.minTrigger;   // 이 BP에서 스케일 시작 임계값
+
+    // (선택) 고해상도/블러 방지 약간의 최적화
+    wrap.style.willChange = "transform";
+
+    if (H < trigger) {
+      // trigger 이하에서는 강제로 축소해 다 보이도록
+      const scale = H / baseH;               // 높이 기준 축소 비율
+      wrap.style.transformOrigin = "top center";
+      wrap.style.transform = `scale(${scale}) translateZ(0)`;
+      wrap.style.height = baseH + "px";      // 스케일 기준 높이로 고정
+      document.body.style.overflow = "hidden";
+    } else if (H < baseH) {
+      // trigger보다 크지만 baseHeight보다 작은 중간 구간도 깔끔히 맞추고 싶다면 유지
+      const scale = H / baseH;
+      wrap.style.transformOrigin = "top center";
+      wrap.style.transform = `scale(${scale}) translateZ(0)`;
+      wrap.style.height = baseH + "px";
+      document.body.style.overflow = "hidden";
+    } else {
+      // 충분히 클 때는 원복
+      wrap.style.transform = "";
+      wrap.style.height = "";
+      document.body.style.overflow = "";
+    }
+  }
+
+  // 4) 초기 실행 + 리사이즈/회전 대응
+  applyResponsiveScale();
+  window.addEventListener("resize", applyResponsiveScale);
+  window.addEventListener("orientationchange", applyResponsiveScale);
+
+  // 5) 미디어쿼리 상태가 바뀌면(브레이크포인트 전환) 다시 계산
+  PROFILES.forEach(p => {
+    const mql = window.matchMedia(p.query);
+    mql.addEventListener?.("change", applyResponsiveScale);
+  });
+  </script>
+
+</body>
+</html>
