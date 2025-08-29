@@ -423,9 +423,13 @@
         const fs = isLarge ? "48px" : isMedium ? "40px" : isSmall ? "32px" : isMobile ? "22px" : "inherit";
         const texth = isLarge ? 54 : isMedium ? 48 : isSmall ?  38 : isMobile ? 22: "inherit";
         const pd = isLarge ? "18px" : isMedium ? "14px" : isSmall ? "12px" : isMobile ? "4px" : "inherit";
+
+        const textp = isLarge ? -300 : isMedium ? -255 : isSmall ? -375 : isMobile ? -308 : "inherit";
+        const cardp = isLarge ? 148 : isMedium ? 110 : isSmall ? 97 : isMobile ? 73 : "inherit";
+        // -300 148 // -255 110 //  -375 97  //  -308  73
         tl
-          .to(".intro-card", { y: h  / 2 - texth -70, opacity: "1"}, "+=0.8")  
-          .to(".intro-text_wrap", { y: -h / 2 - 30, force3D: true }, "<")
+          .to(".intro-card", { y: cardp, opacity: "1"}, "+=0.8")  
+          .to(".intro-text_wrap", { y: textp, force3D: true }, "<")
           .to(".intro--bg", { background: "none" }, "<")
           .to(".intro-text04 span", { fontWeight: 600, fontSize: fs, color: "#3E29BB" }, "<")
           .to(".intro-text_badge", { background: "linear-gradient(90deg, #4B80FF 20%, #674FFC 100%)" }, "<")

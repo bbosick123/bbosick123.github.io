@@ -1005,6 +1005,7 @@ body, html {
   min-width: 134rem;
   padding: 0 2rem;
   opacity: 0;
+  pointer-events: none;
 }
 @media (max-width: 1365px) {
   .intro-card {
@@ -1013,7 +1014,7 @@ body, html {
 }
 @media (max-width: 630px) {
   .intro-card {
-    width: 100%;
+    width: calc(100% - 4rem);
     padding: 0;
   }
 }
