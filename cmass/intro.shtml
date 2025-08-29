@@ -323,7 +323,7 @@
 
 
 
-      .to('.intro-text01', { opacity: "0", y: "-95", duration: "0.3" }, "+=1.3")
+      .to('.intro-text01', { opacity: "0", y: "-95", duration: "0.3" }, "+=0.0001")
       .to(".step01-img", { opacity: "0", duration: "1" }, "<")
       .to('.intro-text02', { opacity: "1", y: "0", duration: "0.5" }, "<")
       .to('.intro-shape01', { x: "0", bottom: "auto", top: "-600", left: "50%", xPercent: -60, opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
@@ -350,7 +350,7 @@
 
 
 
-      .to('.intro-text02', { opacity: "0", y: "-95", duration: "0.3" }, "+=1.3")
+      .to('.intro-text02', { opacity: "0", y: "-95", duration: "0.3" }, "+=0.0001")
       .to(".step02-img", { opacity: "0", duration: "1" }, "<")
       .to('.intro-text03', { opacity: "1", y: "0", duration: "0.5" }, "<")
       .to('.intro-shape01', { x: "0", top: "50%", left: "100%", xPercent: -35, yPercent: -60, width: "500", height: "500", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
@@ -397,7 +397,7 @@
 
 
 
-      .to('.intro-text03', { opacity: "0", y: "-95", duration: "0.3" }, "+=1.3")
+      .to('.intro-text03', { opacity: "0", y: "-95", duration: "0.3" }, "+=0.0001")
       .to(".step03-img", { opacity: "0", duration: "1" }, "<")
       .to('.intro-text04', { opacity: "1", y: "0", duration: "0.5" }, "<")
       .to('.intro-text04 span', { y: "0", duration: "1" }, "<")
@@ -421,10 +421,11 @@
         const { isLarge, isMedium, isSmall, isMobile } = conditions;
         const h = isLarge ? 542 : isMedium ? 400 : isSmall ? 710 : isMobile ? 616 : "inherit";
         const fs = isLarge ? "48px" : isMedium ? "40px" : isSmall ? "32px" : isMobile ? "22px" : "inherit";
-        const texth = isLarge ? "54px" : isMedium ? "48px" : isSmall ?  "38px" : isMobile ? "22px": "inherit";
+        const texth = isLarge ? 54 : isMedium ? 48 : isSmall ?  38 : isMobile ? 22: "inherit";
         const pd = isLarge ? "18px" : isMedium ? "14px" : isSmall ? "12px" : isMobile ? "4px" : "inherit";
         tl
-          .to(".intro-text_wrap", { y: -h / 2, force3D: true })
+          .to(".intro-card", { y: h  / 2 - texth -70, opacity: "1"}, "+=0.8")  
+          .to(".intro-text_wrap", { y: -h / 2 - 30, force3D: true }, "<")
           .to(".intro--bg", { background: "none" }, "<")
           .to(".intro-text04 span", { fontWeight: 600, fontSize: fs, color: "#3E29BB" }, "<")
           .to(".intro-text_badge", { background: "linear-gradient(90deg, #4B80FF 20%, #674FFC 100%)" }, "<")

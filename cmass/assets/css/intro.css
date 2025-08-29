@@ -322,25 +322,6 @@ time {
   display: inline;
 }
 
-:root {
-  --cardh: 542px;
-}
-@media (min-width: 1366px) and (max-width: 1675px) {
-  :root {
-    --chardh: 400px;
-  }
-}
-@media (max-width: 1365px) {
-  :root {
-    --chardh: 710px;
-  }
-}
-@media (max-width: 630px) {
-  :root {
-    --chardh: 616px;
-  }
-}
-
 body, html {
   width: 100%;
 }
@@ -727,12 +708,11 @@ body, html {
 }
 
 .intro {
-  overflow: hidden;
   position: relative;
   min-height: 100vh;
   height: 100%;
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) var(--cardH);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 6rem;
@@ -760,7 +740,7 @@ body, html {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 100%);
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   line-height: 1.4;
   text-align: center;
@@ -769,7 +749,6 @@ body, html {
   font-weight: 500;
   color: #fff;
   opacity: 0;
-  white-space: nowrap;
 }
 .intro-text_wrap {
   overflow: hidden;
@@ -777,8 +756,6 @@ body, html {
   width: 100%;
   height: 23.6rem;
   pointer-events: none;
-  grid-row: 1;
-  place-content: center; /* 세로/가로 중앙 */
 }
 @media (min-width: 1366px) and (max-width: 1675px) {
   .intro-text_wrap {
@@ -1022,17 +999,12 @@ body, html {
   opacity: 0;
 }
 .intro-card {
-  grid-row: 2;
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
   justify-content: center;
   min-width: 134rem;
   padding: 0 2rem;
-  height: var(--cardh);
-  overflow: hidden;
+  opacity: 0;
 }
 @media (max-width: 1365px) {
   .intro-card {
