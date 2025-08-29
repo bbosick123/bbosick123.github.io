@@ -708,6 +708,7 @@ body, html {
 }
 
 .intro {
+  z-index: 2;
   position: relative;
   min-height: 100vh;
   height: 100%;
@@ -755,7 +756,7 @@ body, html {
   position: relative;
   width: 100%;
   height: 23.6rem;
-  pointer-events: none;
+  pointer-events: all;
 }
 @media (min-width: 1366px) and (max-width: 1675px) {
   .intro-text_wrap {
@@ -1005,6 +1006,7 @@ body, html {
   min-width: 134rem;
   padding: 0 2rem;
   opacity: 0;
+  z-index: 1;
   pointer-events: none;
 }
 @media (max-width: 1365px) {
@@ -1966,6 +1968,7 @@ font {
   margin-top: 0;
   height: auto;
   overflow: visible;
+  pointer-events: all;
 }
 @media (max-width: 1365px) {
   .intro.skip .intro-card {

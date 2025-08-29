@@ -90,11 +90,11 @@
       <div class="intro-shape intro-shape03"></div>
     </div>
   </div>
-  <div class="cmass">
-    <button class="skip-btn">
+   <button class="skip-btn">
         SKIP
         <img src="./assets/images/intro/ic-skip.png" alt="">
     </button>
+  <div class="cmass">
     <div class="intro">
       <div class="intro-text_wrap">
         <div class="intro-text intro-text01">
@@ -290,9 +290,16 @@
 
     tl
       .to('.intro-text01', { opacity: "1", y: "0", duration: "1" }, "+=1")
-      .to('.intro-shape01', { x: "-230", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
-      .to('.intro-shape02', { left: "35%", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
-      .to('.intro-shape03', { top: "30%", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+       withBP(({ conditions }) => {
+        const { isLarge, isMedium, isSmall, isMobile } = conditions;
+        if (conditions.isLarge || conditions.isMedium) {
+          tl
+          .to('.intro-shape01', { x: "-230", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+          .to('.intro-shape02', { left: "35%", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+          .to('.intro-shape03', { top: "30%", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+        }
+       })
+      tl
       .to(".step01-img01", { x: "0", opacity: "0.2", duration: "1" }, "<")
       .to(".step01-img02", { y: "0", x: "0", opacity: "0.8", duration: "1" }, "<")
       .to(".step01-img03", { x: "0", opacity: "0.6", duration: "1" }, "<")
@@ -323,14 +330,21 @@
 
 
 
-      .to('.intro-text01', { opacity: "0", y: "-95", duration: "0.3" }, "+=0.0001")
+      .to('.intro-text01', { opacity: "0", y: "-95", duration: "0.3" }, "+=1.3")
       .to(".step01-img", { opacity: "0", duration: "1" }, "<")
       .to('.intro-text02', { opacity: "1", y: "0", duration: "0.5" }, "<")
-      .to('.intro-shape01', { x: "0", bottom: "auto", top: "-600", left: "50%", xPercent: -60, opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
-      .to('.intro-shape02', { top: "100%", yPercent: "-40", left: "50%", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
-      .to('.intro-shape03', { top: "100%", right: "100%", xPercent: "80", yPercent: "-60", width: "575px", height: "575px", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+      withBP(({ conditions }) => {
+        const { isLarge, isMedium, isSmall, isMobile } = conditions;
+        if (conditions.isLarge || conditions.isMedium) {
+          tl
+          .to('.intro-shape01', { x: "0", bottom: "auto", top: "-600", left: "50%", xPercent: -60, opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+          .to('.intro-shape02', { top: "100%", yPercent: "-40", left: "50%", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+          .to('.intro-shape03', { top: "100%", right: "100%", xPercent: "80", yPercent: "-60", width: "575px", height: "575px", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+        }
+      })
+      tl
       .to(".step02-img01", { y: "100", opacity: "1", duration: "1" }, "<")
-      .to(".step02-img02", { y: "100", opacity: "01", duration: "1" }, "<")
+      .to(".step02-img02", { y: "100", opacity: "1", duration: "1" }, "<")
       .to(".step02-img03", { y: "100", opacity: "1", duration: "1" }, "<")
       .to(".step02-img04", { y: "100", opacity: "1", duration: "1" }, "<")
 
@@ -350,12 +364,19 @@
 
 
 
-      .to('.intro-text02', { opacity: "0", y: "-95", duration: "0.3" }, "+=0.0001")
+      .to('.intro-text02', { opacity: "0", y: "-95", duration: "0.3" }, "+=1.3")
       .to(".step02-img", { opacity: "0", duration: "1" }, "<")
       .to('.intro-text03', { opacity: "1", y: "0", duration: "0.5" }, "<")
-      .to('.intro-shape01', { x: "0", top: "50%", left: "100%", xPercent: -35, yPercent: -60, width: "500", height: "500", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
-      .to('.intro-shape02', { top: "100%", xPercent: "-5", yPercent: "-45", left: "0", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
-      .to('.intro-shape03', { top: "0", right: "50%", xPercent: "-50", yPercent: "-55", width: "575px", height: "575px", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+      withBP(({ conditions }) => {
+        const { isLarge, isMedium, isSmall, isMobile } = conditions;
+        if (conditions.isLarge || conditions.isMedium) {
+          tl
+          .to('.intro-shape01', { x: "0", top: "50%", left: "100%", xPercent: -35, yPercent: -60, width: "500", height: "500", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+          .to('.intro-shape02', { top: "100%", xPercent: "-5", yPercent: "-45", left: "0", opacity: "0.5", duration: "1", ease: "power3.out" }, "<")
+          .to('.intro-shape03', { top: "0", right: "50%", xPercent: "-50", yPercent: "-55", width: "575px", height: "575px", opacity: "0.74", duration: "1", ease: "power3.out" }, "<")
+        }
+      })
+      tl
       .to(".step03-img01", { top: "-10px", left: "-10px", opacity: "1", duration: "1" }, "<")
       .to(".step03-img02", { bottom: "100px", left: "70px", opacity: "1", duration: "1" }, "<")
       .to(".step03-img03", { top: "100px", right: "0", opacity: "1", duration: "1" }, "<")
@@ -397,7 +418,7 @@
 
 
 
-      .to('.intro-text03', { opacity: "0", y: "-95", duration: "0.3" }, "+=0.0001")
+      .to('.intro-text03', { opacity: "0", y: "-95", duration: "0.3" }, "+=1.3")
       .to(".step03-img", { opacity: "0", duration: "1" }, "<")
       .to('.intro-text04', { opacity: "1", y: "0", duration: "0.5" }, "<")
       .to('.intro-text04 span', { y: "0", duration: "1" }, "<")
@@ -426,9 +447,8 @@
 
         const textp = isLarge ? -300 : isMedium ? -255 : isSmall ? -375 : isMobile ? -308 : "inherit";
         const cardp = isLarge ? 148 : isMedium ? 110 : isSmall ? 97 : isMobile ? 73 : "inherit";
-        // -300 148 // -255 110 //  -375 97  //  -308  73
         tl
-          .to(".intro-card", { y: cardp, opacity: "1"}, "+=0.8")  
+          .to(".intro-card", { y: cardp, opacity: "1", pointerEvents: "all"}, "+=0.8")  
           .to(".intro-text_wrap", { y: textp, force3D: true }, "<")
           .to(".intro--bg", { background: "none" }, "<")
           .to(".intro-text04 span", { fontWeight: 600, fontSize: fs, color: "#3E29BB" }, "<")
