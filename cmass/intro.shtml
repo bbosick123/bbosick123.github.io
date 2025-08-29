@@ -91,14 +91,11 @@
     </div>
   </div>
   <div class="cmass">
-    <div class="intro">
-      <button class="skip-btn">
+    <button class="skip-btn">
         SKIP
         <img src="./assets/images/intro/ic-skip.png" alt="">
-      </button>
-
-      
-
+    </button>
+    <div class="intro">
       <div class="intro-text_wrap">
         <div class="intro-text intro-text01">
           처음 가르치는<br class="tabletI"> 과목도 당당하게,<br>
@@ -428,11 +425,11 @@
         const pd = isLarge ? "18px" : isMedium ? "14px" : isSmall ? "12px" : isMobile ? "4px" : "inherit";
         tl
         tl.to(".intro-card", { height: h, opacity: "1", overflow: "visible" }, "+=0.8")
-          // .to(".intro--bg", { background: "none" }, "<")
+          .to(".intro--bg", { background: "none" }, "<")
           .to(".intro-text04 span", { fontWeight: 600, fontSize: fs, color: "#3E29BB" }, "<")
           .to(".intro-text_badge", { background: "linear-gradient(90deg, #4B80FF 20%, #674FFC 100%)" }, "<")
-          // .to(".intro-text--split01 img", { filter: "brightness(0) invert(1)", height: texth }, "<")
-          // .to(".intro-text--split02 img", { filter: "brightness(0) invert(1)", height: texth }, "<")
+          .to(".intro-text--split01 img", { filter: "brightness(0) invert(1)", height: texth }, "<")
+          .to(".intro-text--split02 img", { filter: "brightness(0) invert(1)", height: texth }, "<")
           .to(".intro-text--split01", { gap: pd }, "<")
           .to(".intro-text--split02", { paddingLeft: pd }, "<")
           
