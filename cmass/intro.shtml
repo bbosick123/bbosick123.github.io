@@ -163,7 +163,7 @@
         </div>
       </div>
 
-      <div class="intro-card">
+      <!-- <div class="intro-card">
         <ul>
           <li>
             <a href="./main_list.shtml?grade=elem" class="card card01">
@@ -230,7 +230,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
 
     </div>
   </div>
