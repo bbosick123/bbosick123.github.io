@@ -917,7 +917,7 @@ body, html {
 }
 @media (max-width: 630px) {
   .intro-text_badge {
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 4rem;
     max-width: 100%;
   }
 }
